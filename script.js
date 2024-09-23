@@ -1,11 +1,23 @@
+// julia 
 function calcula();
-const salario (document.getElementById("salario"));
+const salario = document.getElementById('salario').value;
 const base = salario - descontos; 
-let aliquota= 0; 
-let deducao = ;
+let porcentagem= 7.5 * salario / 100;
+const aliquota= porcentagem;
+const num_dependentes = document.getElementById('dependentes')
+let deducao= document.getElementById('deducao').value*document.getElementById('dependentes').value;
 const principal = base * aliquota - deducao; 
-if (salario<=2259,20){
-    getElementById('valor').innerhtml="não é necessário pagar imposto";
-}else if( salario<=2826,65){
+let result = principal;
 
-}
+ if (salario<=2259,20){
+     getElementById('valor').innerhtml="não é necessário pagar imposto";
+ }else if( salario<=2826,65){
+    result=principal;
+ }else if( salario<=3751,65){
+     result=principal;
+ }else if( salario<=4664,68){
+     result=principal;
+ }else{
+     result=principal;
+ }
+document.getElementById('result').innerhtml = "valor do imposto" + result;

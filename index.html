@@ -1,3 +1,4 @@
+<!-- julia -->
 <!DOCTYPE html>
 <html lang="pt/br">
 <head>
@@ -6,8 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input type="number" placeholder="salario">
-    <input type="number" placeholder="valor a deduzir">
-    <input type="number" placeholder="numero de depentes">
+    <input type="number" id="salario" placeholder="salario">
+    <input type="number" id="deducao"placeholder="valor a deduzir">
+    <input type="number" id="depentes" placeholder="numero de depentes">
+    <h2>imposto à pagar</h2>
+    <span id="result"></span>
+    <button onclick="calcula()"></button>
+    <script src="script.js"></script>
 </body>
 </html>

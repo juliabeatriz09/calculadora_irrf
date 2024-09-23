@@ -1,0 +1,22 @@
+/* julia */
+body{
+    display: grid;
+    grid-template-areas: "cab cab cab"
+                         "corp corp corp"
+                         "pe pe pe";
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 1fr 2fr 1fr;
+    
+}
+
+header{
+   grid-area: cab;
+}
+
+main{
+   grid-area: corp;
+}
+
+footer{
+    grid-area: pe;
+}
