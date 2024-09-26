@@ -1,23 +1,32 @@
 // julia 
-function calcula();
+function irrf(){
 const salario = document.getElementById('salario').value;
 const base = salario - descontos; 
-let porcentagem= 7.5 * salario / 100;
-const aliquota= porcentagem;
-const num_dependentes = document.getElementById('dependentes')
+let aliquota=0;
+const num_dependentes = document.getElementById('dependentes').value;
 let deducao= document.getElementById('deducao').value*document.getElementById('dependentes').value;
 const principal = base * aliquota - deducao; 
 let result = principal;
 
+
+
  if (salario<=2259,20){
      getElementById('valor').innerhtml="não é necessário pagar imposto";
  }else if( salario<=2826,65){
-    result=principal;
+    aliquota=7.5*salario/100
+    result = principal;
+    getElementById('valor').innerhtml= "o valor a ser pago=" + result;
  }else if( salario<=3751,65){
-     result=principal;
+    aliquota=15.0*salario/100
+    result = principal;
+    getElementById('valor').innerhtml= "o valor a ser pago=" + result;
  }else if( salario<=4664,68){
-     result=principal;
+    aliquota=22.5*salario/100
+    result = principal;
+    getElementById('valor').innerhtml= "o valor a ser pago=" + result;
  }else{
-     result=principal;
+    aliquota=27.5*salario/100
+    result = principal;
+    getElementById('valor').innerhtml= "o valor a ser pago=" + result;
  }
-document.getElementById('result').innerhtml = "valor do imposto" + result;
+}
