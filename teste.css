@@ -1,0 +1,14 @@
+/* fonte da pagina */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@415&display=swap');
+body{
+    font-family: 'Quicksand', 'sans-serif';
+}
+    /* fim da fonte */
+body{
+        grid-area: corp;
+        background-color: rgb(176,196,222);
+}
+.t head{
+    background-color:antiquewhite
+}
+     
