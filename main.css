@@ -20,7 +20,7 @@ header{
 
 main{
    grid-area: corp;
-   background-color: rgb(176,196,222);
+   background-color: rgb(191, 205, 223);
 }
 
 footer{
@@ -28,19 +28,19 @@ footer{
     background-color: rgb(70,130,180);
 }
 .card{
-    margin-left: 28%;
+    margin-left: 100px;
     margin-top: 15px;
     margin-bottom: 15px;
     display: flex;
     border-radius: 10px;
-    background-color: rgb(174, 201, 226);
-    width: 900px;
-    height: 500px;
+    background-color: rgb(178, 204, 230);
+    width: 500px;
+    height: 900px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    box-shadow: 0px 10px 30px rgb(36, 51, 59);
+    box-shadow: 0px 10px 30px rgb(146, 174, 190);
     text-align: center;
 }
 h5{
@@ -50,4 +50,19 @@ h5{
 }
 .card > h1{
     font-size: 40px;
+}
+
+ main h4{
+    position: relative;
+    left: 1100px;
+    bottom: 500px;
+    color: rgb(64, 69, 95);
+    font-size: xx-large;
+ }
+.tabela{
+    height: 300px;
+    width: auto;
+    position: relative;
+    left: 1100px;
+    bottom: 500px;
 }
