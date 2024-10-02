@@ -59,3 +59,86 @@ button{
     font-size: 17px;
 }
 /* fim das configuraçoes do card */
+
+/* configuraçao do menu */
+.menu nav{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgb(236, 205, 104);
+    width: 50px;
+    transition: all 0.8s ease;
+    position: relative;
+    margin: 5px;
+}
+.menu li{
+    list-style: none;
+    color: #fffbfb;
+    padding: 10px;
+    text-align: center;
+    font-size: 23px;
+}
+.menu li a{
+    color:#000000;
+    text-decoration: none;
+}
+.menu a span{
+    font-size: 0;
+    display: block;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+.menu label{
+    font-size: 28px;
+    padding-left: 16px;
+
+}
+
+.botaoz{
+    display: none;
+    color: #72CBFF;
+}
+.botaoz:checked+nav{
+    width: 200px;
+    border-radius: 5px;
+    padding: 0 20px;
+}
+
+.botaoz:checked+nav li{
+    border-bottom: dashed 1px rgb(248, 233, 147) ;
+    text-align: left;
+}
+
+.botaoz:checked+nav li:last-child{
+    border: none;
+}
+
+.botaoz:checked+nav a span{
+    font-size: 16px;
+    display: inline-block;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+.fa-bars:hover{
+    color: white;
+    text-shadow: 1px 1px 8px #fcdbe4;
+}
+
+.menu li a:hover{
+    color: #31769e;
+    text-shadow: 0 0 5px white;
+}
+
+.icon1{
+    width: 35px;
+}
+.icon2{
+    width: 43px;
+}
+.icon3{
+    width: 45px;
+}
+.icon{
+    width: 30px;
+}
+/* final das configuracoes do menu */
