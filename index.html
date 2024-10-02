@@ -3,12 +3,43 @@
 <html lang="pt/br">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Mensal</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
-    1
+     <!-- inicio do menu retratil -->
+ <div id="menu " class="menu" >
+
+    <label for="botaoz"><i class="fa-solid fa-bars" ></i> <img src="img/menu.png" class="icon" alt="aa"></label>
+    <input id="botaoz" class="botaoz" type="checkbox" name="menu">
+    <nav>
+        <ul>
+            <li>
+                <a href="main.html">
+                    
+                    <i class="fa-solid fa-house"> </i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="index.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Calculo</span>
+                </a>
+            </li>
+            <li>
+                <a href="mai.HTML">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Duvidas</span>
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>  
+<!-- fim do menu retratil -->
+
 </header>
 <main>
     <div class="card">
@@ -18,13 +49,14 @@
         <input type="number" id="salario" placeholder="salario">
         <h3>Valor a deduzir:</h3>
         <input type="number" id="dependentes" placeholder="numero de dependentes">
-        <h4>media deducao</h4>
+        <h4>Media dedução:</h4>
         <input type="number" id="deducao" value="189.">
         
         <h2>imposto à pagar</h2>
+        <span id="valor"></span><br>
         <button onclick="irrf()">calcular</button>
 
-        <span id="valor"></span>
+        <!-- <span id="valor"></span> -->
     </div>
 
 
