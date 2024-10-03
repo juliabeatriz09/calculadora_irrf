@@ -7,59 +7,64 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
- <!-- inicio do menu retratil -->
- <div id="menu " class="menu" >
-
-    <label for="botaoz"><i class="fa-solid fa-bars" ></i> <img src="img/menu.png" class="icon" alt="aa"></label>
-    <input id="botaoz" class="botaoz" type="checkbox" name="menu">
-    <nav>
-        <ul>
-            <li>
-                <a href="main.html">
-                    
-                    <i class="fa-solid fa-house"> </i>
-                    <span>Home</span>
-                </a>
-            </li>
-            <li>
-                <a href="index.html">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <span>Calculo</span>
-                </a>
-            </li>
-            <li>
-                <a href="mai.HTML">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <span>Duvidas</span>
-                </a>
-            </li>
-            
-        </ul>
-    </nav>
-</div>  
-<!-- fim do menu retratil -->
+<header> <!-- inicio do menu retratil -->
+    <div id="menu " class="menu" >
+   
+       <label for="botaoz"><i class="fa-solid fa-bars" ></i> <img src="img/menu-burger.png" class="icon" alt="aa"></label>
+       <input id="botaoz" class="botaoz" type="checkbox" name="menu">
+       <nav>
+           <ul>
+               <li>
+                   <a href="main.html">
+                       
+                       <i class="fa-solid fa-house"> </i>
+                       <span>Home</span>
+                   </a>
+               </li>
+               <li>
+                   <a href="index.html">
+                       <i class="fa-solid fa-cart-shopping"></i>
+                       <span>Calculo</span>
+                   </a>
+               </li>
+               <li>
+                   <a href="mai.HTML">
+                       <i class="fa-solid fa-cart-shopping"></i>
+                       <span>Duvidas</span>
+                   </a>
+               </li>
+               
+           </ul>
+       </nav>
+   </div>  
+   <!-- fim do menu retratil -->
 </header>
 <main>
-    <!-- <div class="card">
-        <h1>Insira as seguintes infomações : </h1>
+    <input type="text" id="descri" placeholder="descrição" >
+    <input type="text" id="refe" placeholder="referencia" >
+    <input type="text" id="prov" placeholder="proventos" >
+    <input type="text"  id="desc"  placeholder="descontos" >
+    <button oniclick="holerite()">gerar</button>
+ <table>
+    <thead>
+        <tr>
+            <th>cod.</th>
+            <th>descrição</th>
+            <th> referencia</th>
+            <th>proventos</th>
+            <th>descontos</th>
 
-        <h3>Salario:</h3>
-        <input type="number" id="salario" placeholder="salario">
-        <h3>Valor a deduzir:</h3>
-        <input type="number" id="dependentes" placeholder="numero de dependentes">
-        <h2>imposto à pagar</h2>
-        <button onclick="irrf()">calcular</button>
-
-        <span id="valor"></span>
-    </div> -->
-
-
-    <script src="script.js"></script>
+        </tr>
+        
+    </thead>
+    <tbody id="dentro">
+        <script src="anual.js"></script>
+    </tbody>
+ </table>
 </main>
 <footer>
-    2
-</footer>
 
+</footer>
 </body>
 </html>
+       
