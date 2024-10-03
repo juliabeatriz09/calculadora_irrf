@@ -1,3 +1,11 @@
+/* main.css */
+
+/* Reset básico para remover margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* fonte da pagina */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@415&display=swap');
 body{
@@ -11,94 +19,18 @@ body{
                          "pe pe pe";
     grid-template-columns: 200px 200px;
     grid-template-rows: 1fr 3fr 1fr;
-    
-}
-header{
-   grid-area: cab;
-   background-color: rgb(70,130,180);
 }
 
-main{
-   grid-area: corp;
-   background-color: rgb(191, 205, 223);
-}
 
-footer{
-    grid-area: pe;
-    background-color: rgb(70,130,180);
-}
-.card{
-    margin-left: 100px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    display: flex;
-    border-radius: 10px;
-    background-color: rgb(86, 129, 172);
-    width: 500px;
-    height: 900px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    box-shadow: 0px 10px 30px rgb(146, 174, 190);
-    text-align: center;
-}
-.card2{
-    margin-left: 100px;
-    margin-top: 90px;
-    margin-bottom: 15px;
-    display: flex;
-    border-radius: 10px;
-    background-color: rgb(86, 129, 172);
-    width: 500px;
-    height: 600px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 10px 30px rgb(146, 174, 190);
-    text-align: center;
-    position: relative;
-    left: 35%;
-    bottom: 60%;
-}
-.card2> h5{
-  padding: 5px;
-  margin: 3px;
-  font-size: x-large;
-  margin-bottom: 160px;
-}
-
-.card2>h1{
-    margin-top: 600px;
-}
-
-.card > h5 {
+header {
+    grid-area: cab;
+    background: #d1f4ff;
     padding: 10px;
-    margin: 5px;
-    font-size: x-large;
-}
-.card > h1{
-    font-size: 40px;
+    display: flex;
+    align-items: center;
 }
 
- main h4{
-    position: relative;
-    left: 5%;
-    bottom: 15%;
-    color: rgb(64, 69, 95);
-    font-size: xx-large;
- }
-.tabela{
-    height: 300px;
-    width: auto;
-    position: relative;
-    left: 5%;
-    bottom: 20%;
-}
-
-/* fim das configuraçoes do card */
-
-/* configuraçao do menu */
+* configuraçao do menu */
 .menu nav{
     background-color: white;
     border-radius: 20px;
@@ -133,7 +65,7 @@ footer{
 
 .botaoz{
     display: none;
-    color: #72CBFF;
+    color: #3e88b3;
 }
 .botaoz:checked+nav{
     width: 200px;
@@ -142,7 +74,7 @@ footer{
 }
 
 .botaoz:checked+nav li{
-    border-bottom: dashed 1px rgb(30, 28, 116) ;
+    border-bottom: dashed 1px rgb(63, 116, 167) ;
     text-align: left;
 }
 
@@ -158,13 +90,13 @@ footer{
 }
 
 .fa-bars:hover{
-    color: white;
+    color: rgb(217, 243, 255);
     text-shadow: 1px 1px 8px #fcdbe4;
 }
 
 .menu li a:hover{
     color: #31769e;
-    text-shadow: 0 0 5px white;
+    text-shadow: 0 0 5px rgb(217, 243, 255);
 }
 
 
@@ -178,12 +110,63 @@ footer{
     position: relative;
     left: 60px;
 }
-footer h3{
-    position: relative;
-    left: 40px;
+/* final menu */
+
+main {
+    background-color: #97c2dd;
+    grid-area: corp;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cartões se ajustem */
+    justify-content: center; /* Centraliza os cartões */
 }
-footer h2{
-    position: relative;
-    left: 40px;
+
+.card, .card2, .card3{
+    background: #ffffff;
+    padding: 20px;
+    margin: 10px; /* Margem entre os cartões */
+    border-radius: 8px;
+    width: calc(600px - 40px); /* Largura dos cards */
 }
-/* final das configuracoes do menu */
+
+main h1 {
+    color: #386ea8; /* Azul para os títulos */
+    margin-bottom: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+main h5 {
+    color: #555; /* Texto em cinza escuro para subtítulos */
+    font-size: 20px;
+}
+
+main h4 {
+    color: #555; /* Texto em cinza escuro para subtítulos */
+    font-size: 20px;
+}
+main li{
+    color: #555; /* Texto em cinza escuro para subtítulos */
+    font-size: 17px;
+}
+
+.tabela {
+    margin-top: 10%;
+    width: 500px;
+}
+
+footer {
+    background: #d6eaf0;
+    padding: 20px;
+    text-align: center;
+    grid-area: pe;
+}
+
+footer img {
+    margin: 10px;
+}
+
+footer h2, footer h3 {
+    color: #386ea8; /* Azul para textos do rodapé */
+}
+
