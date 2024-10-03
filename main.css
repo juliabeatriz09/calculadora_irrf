@@ -10,7 +10,7 @@ body{
                          "corp corp corp"
                          "pe pe pe";
     grid-template-columns: 200px 200px;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
     
 }
 header{
@@ -33,7 +33,7 @@ footer{
     margin-bottom: 15px;
     display: flex;
     border-radius: 10px;
-    background-color: rgb(178, 204, 230);
+    background-color: rgb(86, 129, 172);
     width: 500px;
     height: 900px;
     flex-direction: column;
@@ -43,10 +43,39 @@ footer{
     box-shadow: 0px 10px 30px rgb(146, 174, 190);
     text-align: center;
 }
-h5{
+.card2{
+    margin-left: 100px;
+    margin-top: 90px;
+    margin-bottom: 15px;
+    display: flex;
+    border-radius: 10px;
+    background-color: rgb(86, 129, 172);
+    width: 500px;
+    height: 600px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 30px rgb(146, 174, 190);
+    text-align: center;
+    position: relative;
+    left: 35%;
+    bottom: 60%;
+}
+.card2> h5{
+  padding: 5px;
+  margin: 3px;
+  font-size: x-large;
+  margin-bottom: 160px;
+}
+
+.card2>h1{
+    margin-top: 600px;
+}
+
+.card > h5 {
     padding: 10px;
     margin: 5px;
-    font-size: 22px;
+    font-size: x-large;
 }
 .card > h1{
     font-size: 40px;
@@ -54,8 +83,8 @@ h5{
 
  main h4{
     position: relative;
-    left: 1100px;
-    bottom: 500px;
+    left: 5%;
+    bottom: 15%;
     color: rgb(64, 69, 95);
     font-size: xx-large;
  }
@@ -63,8 +92,8 @@ h5{
     height: 300px;
     width: auto;
     position: relative;
-    left: 1100px;
-    bottom: 500px;
+    left: 5%;
+    bottom: 20%;
 }
 
 /* fim das configuraçoes do card */
@@ -143,5 +172,18 @@ h5{
     width: 70px;
     margin-top: 20px;
 
+}
+
+.chat{
+    position: relative;
+    left: 60px;
+}
+footer h3{
+    position: relative;
+    left: 40px;
+}
+footer h2{
+    position: relative;
+    left: 40px;
 }
 /* final das configuracoes do menu */

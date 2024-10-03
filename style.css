@@ -17,6 +17,15 @@ header{
     grid-area: cab;
     background-color: rgb(70,130,180);
  }
+
+ header h1{
+    text-align: center;
+    color: #e6eefa;
+    font-size: xx-large;
+    background-color: #31769e;
+    position: relative;
+    top: 40px;
+ }
  
  main{
     grid-area: corp;
