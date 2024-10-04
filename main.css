@@ -17,20 +17,34 @@ body{
     grid-template-areas: "cab cab cab"
                          "corp corp corp"
                          "pe pe pe";
-    grid-template-columns: 200px 200px;
-    grid-template-rows: 1fr 3fr 1fr;
+    /* grid-template-columns: 200px 200px;
+    grid-template-rows: 1fr 3fr 1fr; */
 }
 
-
+/* inicio das configuraçoes do header */
 header {
     grid-area: cab;
     background: #d1f4ff;
     padding: 10px;
     display: flex;
     align-items: center;
+    height: 135px;
+    
 }
+.logo{
+    align-items: center;
+    text-align: center;
+    margin-left: 380px;
+ }
 
-* configuraçao do menu */
+/* * configuraçao do menu */
+header{
+    position: relative;
+}
+.menu{
+    position: absolute;
+    top: 0;
+}
 .menu nav{
     background-color: white;
     border-radius: 20px;
@@ -103,7 +117,6 @@ header {
 .icon{
     width: 70px;
     margin-top: 20px;
-
 }
 
 .chat{
@@ -111,7 +124,10 @@ header {
     left: 60px;
 }
 /* final menu */
+/* inicio das configuraçoes do header */
 
+
+/* inicio das configuraçoes do main */
 main {
     background-color: #97c2dd;
     grid-area: corp;
@@ -154,12 +170,18 @@ main li{
     margin-top: 10%;
     width: 500px;
 }
+/* fim das configuraçoes do footer */
 
+/* inicio das configuraçoes do footer */
 footer {
     background: #d6eaf0;
     padding: 20px;
     text-align: center;
     grid-area: pe;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
 }
 
 footer img {
@@ -169,4 +191,6 @@ footer img {
 footer h2, footer h3 {
     color: #386ea8; /* Azul para textos do rodapé */
 }
+/* fim das configuraçoes do footer */
+
 

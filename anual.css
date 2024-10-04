@@ -5,31 +5,44 @@ body{
     /* fim da fonte */
     margin: 0;/* grid */
     display: grid;
-    grid-template-areas: "cab cab cab"
-                         "corp corp corp"
-                         "pe pe pe";
-    grid-template-columns: 200px 200px ;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: "cab "
+                         "corp  "
+                         "pe ";
+    /* grid-template-columns: 200px 200px ; */
+    /* grid-template-rows: 1fr 2fr 2fr  1fr; */
     
     background-color: aliceblue;
 }
 header{
     grid-area: cab;
     background-color: rgb(70,130,180);
+    height: 135px;
  }
  
  main{
     grid-area: corp;
     background-color: rgb(176,196,222);
+    
+ }
+
+ footer{
+    position:absolute;
+    width: 100%;
+    bottom: 0;
+    grid-area: pe;
+    background-color:  rgba(3, 12, 94, 0.938);
+    height: 100px;
  }
  
- footer{
+ /* footer{
      grid-area: pe;
      background-color: rgb(70,130,180);
- }
+     height: 100px;
+     position: relative;
+ } */
 
 
-
+/* inicio das configuraçoes do card */
 h3{
     margin:5px ;
 }
@@ -41,14 +54,14 @@ button{
     width: 80px;
     height: 40px;
     font-size: 17px;
-} */
+} 
 /* fim das configuraçoes do card */
 
 /* configuraçao do menu */
 .menu nav{
     background-color: white;
     border-radius: 20px;
-    box-shadow: 2px 2px 5px rgb(236, 205, 104);
+    box-shadow: 2px 2px 5px rgb(15, 14, 87);
     width: 0px;
     transition: all 0.8s ease;
     position: relative;
@@ -88,7 +101,7 @@ button{
 }
 
 .botaoz:checked+nav li{
-    border-bottom: dashed 1px rgb(248, 233, 147) ;
+    border-bottom: dashed 1px rgb(30, 28, 116);
     text-align: left;
 }
 
