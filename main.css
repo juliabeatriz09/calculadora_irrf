@@ -1,6 +1,4 @@
 /* main.css */
-
-/* Reset básico para remover margens e paddings padrão */
 * {
     margin: 0;
     padding: 0;
@@ -10,21 +8,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@415&display=swap');
 body{
     font-family: 'Quicksand', 'sans-serif';
-/* fim fonte */
-    margin: 0%;
-/* grid */
+    /* fim da fonte */
+    margin: 0;/* grid */
     display: grid;
-    grid-template-areas: "cab cab cab"
-                         "corp corp corp"
-                         "pe pe pe";
-    /* grid-template-columns: 200px 200px;
-    grid-template-rows: 1fr 3fr 1fr; */
+    grid-template-areas: "cab "
+                         "corp  "
+                         "pe ";
+    /* grid-template-columns: 200px 200px ; */
+    /* grid-template-rows: 1fr 2fr 2fr  1fr; */
+    
+    background-color: aliceblue;
 }
-
 /* inicio das configuraçoes do header */
 header {
     grid-area: cab;
-    background: #d1f4ff;
+    background-color: rgba(24, 32, 105, 0.938);
     padding: 10px;
     display: flex;
     align-items: center;
@@ -138,32 +136,35 @@ main {
 }
 
 .card, .card2, .card3{
-    background: #ffffff;
+    background: rgb(255, 255, 255);
     padding: 20px;
+    box-shadow: 0px 5px 10px rgba(97, 97, 139, 0.849);
     margin: 10px; /* Margem entre os cartões */
     border-radius: 8px;
     width: calc(600px - 40px); /* Largura dos cards */
 }
 
 main h1 {
-    color: #386ea8; /* Azul para os títulos */
+    color: #325a85; /* Azul para os títulos */
     margin-bottom: 10px;
     font-size: 30px;
     text-align: center;
 }
 
 main h5 {
-    color: #555; /* Texto em cinza escuro para subtítulos */
+    color: #3f3f47;
     font-size: 20px;
 }
 
 main h4 {
-    color: #555; /* Texto em cinza escuro para subtítulos */
+    color: #3f3f47;
     font-size: 20px;
 }
 main li{
-    color: #555; /* Texto em cinza escuro para subtítulos */
-    font-size: 17px;
+    color: #3f3f47;
+    font-size: 16px;
+    margin-left: 15px;
+    margin-top:5px;
 }
 
 .tabela {
@@ -174,7 +175,8 @@ main li{
 
 /* inicio das configuraçoes do footer */
 footer {
-    background: #d6eaf0;
+    background-color: rgba(24, 32, 105, 0.938);
+    padding: 10px;
     padding: 20px;
     text-align: center;
     grid-area: pe;
@@ -183,14 +185,46 @@ footer {
     width: 100%;
     height: 150px;
 }
+.robo{
+    width: 200px;
+    position: absolute;
+    right:83%;
 
-footer img {
-    margin: 10px;
-}
-
-footer h2, footer h3 {
-    color: #386ea8; /* Azul para textos do rodapé */
 }
 /* fim das configuraçoes do footer */
+/*Tabela*/
+.tabela {
+    padding: 20px;
+}
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
 
+thead {
+    background-color: #97c2dd;
+    color: #3f3f47;
+}
+
+th, td {
+    padding: 10px 15px;
+    text-align: left;
+}
+
+tbody tr {
+    border-bottom: 2px solid #325a85;
+}
+
+tbody tr:last-child {
+    border-bottom: none;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgba(217, 243, 255, 0.5);
+}
+
+th {
+    font-weight: bold;
+    border-bottom: 2px solid #325a85;
+}

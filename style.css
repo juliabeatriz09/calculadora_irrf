@@ -14,7 +14,7 @@ body{
 /* configuracoes do header */
 header{
     grid-area: cab;
-    background-color: rgba(3, 12, 94, 0.938);
+    background-color: rgba(24, 32, 105, 0.938);
     height: 135px;
     /* position: absolute; */
  }
@@ -51,12 +51,11 @@ header{
     width: 100%;
     bottom: 0;
     grid-area: pe;
-    background-color:  rgba(3, 12, 94, 0.938);
-    height: 100px;
+    background-color: rgba(24, 32, 105, 0.938);
+    height: 150px;
  }
 .robozinho{
-    width: 60px;
-    height: 60px;
+    width: 200px;
     margin-top: 20px;
     margin: 15px;
 }

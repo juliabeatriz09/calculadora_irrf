@@ -3,6 +3,9 @@
 <!DOCTYPE html>
 <html lang="pt/br">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina 1</title>
@@ -29,7 +32,7 @@
             <li>
                 <a href="index.html">
                     <i class="fa-solid fa-cart-shopping"></i>
-                    <span>Calculo</span>
+                    <span>Cálculo</span>
                 </a>
             </li>
             <li>
@@ -39,9 +42,9 @@
                 </a>
             </li>
             <li>
-                <a href="mai.HTML">
+                <a href="main.html">
                     <i class="fa-solid fa-cart-shopping"></i>
-                    <span>Duvidas</span>
+                    <span>Dúvidas</span>
                 </a>
             </li>
             
@@ -79,7 +82,44 @@
         <h1>Como calcular?</h1>
         <h5> Para efetuar o cálculo da base do Imposto de Renda, é necessário subtrair do salário bruto os valores de Previdência Social, dependentes legais (se houver) e pensão alimentícia (se houver). Por exemplo: se o funcionário, sem dependentes e sem pensão alimentícia tem remuneração bruta de R$ 3.000,00 — sobre a qual incide INSS de R$ 263,06 (12% – alíquota nominal) — à base de cálculo do IRRF será de R$ 2.736,94.</h5>
         <h4>tabela 2024/2025</h4>
-        <img src="img/tabela.png" class="tabela">
+        <div class="tabela">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Faixa de Renda (R$)</th>
+                        <th>Alíquota (%)</th>
+                        <th>Parcela a Deduzir (R$)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Até R$ 2.259,20</td>
+                        <td>zero</td>
+                        <td>zero</td>
+                    </tr>
+                    <tr>
+                        <td>De R$ 2.259,21 até R$ 2.826,65</td>
+                        <td>7,5%</td>
+                        <td>R$ 169,44</td>
+                    </tr>
+                    <tr>
+                        <td>De R$ 2.826,66 até R$ 3.751,05</td>
+                        <td>15%</td>
+                        <td>R$ 381,44</td>
+                    </tr>
+                    <tr>
+                        <td>De R$ 3.751,06 até R$ 4.664,68</td>
+                        <td>22,5%</td>
+                        <td>R$ 662,77</td>
+                    </tr>
+                    <tr>
+                        <td>Acima de R$ 4.664,68</td>
+                        <td>27,5%</td>
+                        <td>R$ 896,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         </div>
         <div class="card3">
             <h1>Qual o prazo para declaração?</h1>
@@ -107,10 +147,7 @@
         </div>
     </main>
     <footer>
-    <img scr="img/chat.png" class="chat">
-    <h2>tire suas duvidas aqui</h2>
-    <img scr="img/tel.png" class="tel">
-    <h3>(45)99943215</h3>
+        <img src="img/chat.png" class="robo" alt="ppp">
     </footer>
 </body>
 </html>

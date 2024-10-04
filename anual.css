@@ -15,10 +15,15 @@ body{
 }
 header{
     grid-area: cab;
-    background-color: rgb(70,130,180);
+    background-color:rgba(24, 32, 105, 0.938);
     height: 135px;
  }
- 
+ .logo{
+    align-items: center;
+    text-align: center;
+    margin-left: 380px;
+ }
+
  main{
     grid-area: corp;
     background-color: rgb(176,196,222);
@@ -30,8 +35,8 @@ header{
     width: 100%;
     bottom: 0;
     grid-area: pe;
-    background-color:  rgba(3, 12, 94, 0.938);
-    height: 100px;
+    background-color:rgba(24, 32, 105, 0.938);
+    height: 150px;
  }
  
  /* footer{
@@ -58,6 +63,10 @@ button{
 /* fim das configuraçoes do card */
 
 /* configuraçao do menu */
+.menu{
+    position: absolute;
+    top: 0;
+}
 .menu nav{
     background-color: white;
     border-radius: 20px;
@@ -125,7 +134,11 @@ button{
     color: #31769e;
     text-shadow: 0 0 5px white;
 }
-
+.robozinho{
+    width: 200px;
+    margin-top: 20px;
+    margin: 15px;
+}
 
 .icon{
     width: 70px;
