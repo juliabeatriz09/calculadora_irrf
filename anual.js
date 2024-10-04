@@ -1,17 +1,18 @@
 function holerite(){
- const descri = document.getElementById('descri').value;
- const refe = document.getElementById('refe').value;
- const prov = document.getElementById('prov').value;
- const desc = document.getElementsById('desc').value;
+ let descri = document.getElementById('descri');
+ let refe = document.getElementById('refe').value;
+ let prov = document.getElementById('prov').value;
+ let desco = document.getElementById('pandora').value;
 let linha =
-`
-   <Tr>
 
-     <td>${descrição}</td>
-     <td>${refencia}</td>
-     <td>${proventos}</td>
+  ` <Tr>
+
+     <td>${descricao}</td>
+     <td>${referencia}</td>
+     <td>${provenentos}</td>
      <td>${descontos}</td>
-   </Tr>
- `
+   </Tr>`
+ 
+ 
 }
-document.getElementById('dentro').innerHTML = linha;
+document.getElementById('dentro').innerText = linha;

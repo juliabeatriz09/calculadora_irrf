@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="anual.css">
 </head>
 <body>
-<header> <!-- inicio do menu retratil -->
+<header>
+    <img src="img/logo.png" class="logo">
+     <!-- inicio do menu retratil -->
     <div id="menu " class="menu" >
    
        <label for="botaoz"><i class="fa-solid fa-bars" ></i> <img src="img/menu-burger.png" class="icon" alt="aa"></label>
@@ -44,12 +46,13 @@
    </div>  
    <!-- fim do menu retratil -->
 </header>
+<!-- inicio holerite -->
 <main>
     <input type="text" id="descri" placeholder="descrição" >
-    <input type="text" id="refe" placeholder="referencia" >
-    <input type="text" id="prov" placeholder="proventos" >
-    <input type="text"  id="desc"  placeholder="descontos" >
-    <button oniclick="holerite()">gerar</button>
+    <input type="number" id="refe" placeholder="referencia" >
+    <input type="number" id="prov" placeholder="proventos" >
+    <input type="number" id="pandora" placeholder="dependentes">
+    <button onclick="holerite()">gerar</button>
  <table>
     <thead>
         <tr>
@@ -66,10 +69,9 @@
         <script src="anual.js"></script>
     </tbody>
  </table>
+ <!-- fim holerite -->
 </main>
 <footer>
-    
-    <img src="img/chat.png" class="robozinho" alt="ppp">
 
 </footer>
 </body>
