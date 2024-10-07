@@ -5,14 +5,15 @@ function holerite(){
  let desco = document.getElementById('pandora').value;
 let linha =
 
-  ` <Tr>
+   `<Tr>
 
      <td>${descricao}</td>
      <td>${referencia}</td>
      <td>${provenentos}</td>
      <td>${descontos}</td>
+     
    </Tr>`
- 
+ ;
  
 }
 document.getElementById('dentro').innerText = linha;
