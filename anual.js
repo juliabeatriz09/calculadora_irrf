@@ -3,16 +3,17 @@ function holerite(){
  let refe = document.getElementById('refe').value;
  let prov = document.getElementById('prov').value;
  let desco = document.getElementById('pandora').value;
-let linha =
 
-   `<Tr>
+ let linha =
 
-     <td>${descricao}</td>
-     <td>${referencia}</td>
-     <td>${provenentos}</td>
-     <td>${descontos}</td>
+  ´ <Tr>
+
+     <td>${descri}</td>
+     <td>${refe}</td>
+     <td>${prov}</td>
+     <td>${desco}</td>
      
-   </Tr>`
+   </Tr>´
  ;
  
 }
