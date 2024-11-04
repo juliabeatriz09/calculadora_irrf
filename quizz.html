@@ -1,21 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt/br">
-<head>
-</head>
+<link rel="stylesheet" href="quizz.css">
 <body>
     <header>
+        <img src="img/logo.png" alt="oo" class="logo">
+        
+        <!-- inicio do menu retratil -->
+<div id="menu " class="menu" >
 
+   <label for="botaoz"><i class="fa-solid fa-bars" ></i> <img src="img/menu-burger.png" class="icon" alt="aa"></label>
+   <input id="botaoz" class="botaoz" type="checkbox" name="menu">
+   <nav>
+       <ul>
+           <li>
+               <a href="main.html">
+                   
+                   <i class="fa-solid fa-house"> </i>
+                   <span>Home</span>
+               </a>
+           </li>
+           <li>
+               <a href="index.html">
+                   <i class="fa-solid fa-cart-shopping"></i>
+                   <span>Cálculo</span>
+               </a>
+           </li>
+           <li>
+               <a href="anual.html">
+                   <i class="fa-solid fa-cart-shopping"></i>
+                   <span>Holerite</span>
+               </a>
+           </li>
+           <li>
+               <a href="main.html">
+                   <i class="fa-solid fa-cart-shopping"></i>
+                   <span>Dúvidas</span>
+               </a>
+           </li>
+           
+       </ul>
+   </nav>
+</div>  
     </header>
     <main>
-        <h1>Questão 1</h1> 
-     <input type="radio" name="quest1" value="errada">
-     <input type="radio" name="quest1" value="errada">
-     <input type="radio" name="quest1" value="errada">
-     <input type="radio" name="quest1" value="errada">
-     <p id="resp_correta" class="certa" ></p>
-     <p id="resp_errada" class="errada"></p>
+    
+        <div class="perguntas">
+    <h1>Questão 1</h1> 
+    <input type="radio" name="quest1" value="errada">
+    <input type="radio" name="quest1" value="errada">
+    <input type="radio" name="quest1" value="errada">
+    <input type="radio" name="quest1" value="errada">
+    <p id="resp_correta" class="certa" ></p>
+    <p id="resp_errada" class="errada"></p>
 
-     <h1>Questão 2</h1>
+    <h1>Questão 2</h1>
     <input type="radio" name="quest2" value="errada">
     <input type="radio" name="quest2" value="errada">
     <input type="radio" name="quest2" value="certa">
@@ -88,10 +126,11 @@
     <p id="resp_errada " class="errada"></p>
     <script href="quizz.js"></script>
     <button onclick="quizz()"></button>
+    </div>
 
     </main>
     <footer>
-
+        <img src="img/chat.png" class="robo" alt="ppp">
     </footer>
 </body>
 </html>

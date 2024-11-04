@@ -1,0 +1,188 @@
+/* main.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* fonte da pagina */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@415&display=swap');
+body{
+    font-family: 'Quicksand', 'sans-serif';
+    /* fim da fonte */
+    margin: 0;/* grid */
+    display: grid;
+    grid-template-areas: "cab "
+                         "corp  "
+                         "pe ";
+    /* grid-template-columns: 200px 200px ; */
+    /* grid-template-rows: 1fr 2fr 2fr  1fr; */
+    
+    background-color: aliceblue;
+}
+/* inicio das configuraçoes do header */
+header {
+    grid-area: cab;
+    background-color: rgba(24, 32, 105, 0.938);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    height: 135px;
+    
+}
+.logo{
+    align-items: center;
+    text-align: center;
+    margin-left: 380px;
+ }
+
+/* * configuraçao do menu */
+header{
+    position: relative;
+}
+.menu{
+    position: absolute;
+    top: 0;
+}
+.menu nav{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgb(15, 14, 87);
+    width: 0px;
+    transition: all 0.8s ease;
+    position: relative;
+    margin: 5px;
+}
+.menu li{
+    list-style: none;
+    color: #fffbfb;
+    padding: 10px;
+    text-align: center;
+    font-size: 23px;
+}
+.menu li a{
+    color:#000000;
+    text-decoration: none;
+}
+.menu a span{
+    font-size: 0;
+    display: block;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+.menu label{
+    font-size: 28px;
+    padding-left: 6px;
+
+}
+
+.botaoz{
+    display: none;
+    color: #3e88b3;
+}
+.botaoz:checked+nav{
+    width: 200px;
+    border-radius: 5px;
+    padding: 0 20px;
+}
+
+.botaoz:checked+nav li{
+    border-bottom: dashed 1px rgb(63, 116, 167) ;
+    text-align: left;
+}
+
+.botaoz:checked+nav li:last-child{
+    border: none;
+}
+
+.botaoz:checked+nav a span{
+    font-size: 16px;
+    display: inline-block;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+.fa-bars:hover{
+    color: rgb(217, 243, 255);
+    text-shadow: 1px 1px 8px #fcdbe4;
+}
+
+.menu li a:hover{
+    color: #31769e;
+    text-shadow: 0 0 5px rgb(217, 243, 255);
+}
+
+
+.icon{
+    width: 70px;
+    margin-top: 20px;
+}
+
+.chat{
+    position: relative;
+    left: 60px;
+}
+main {
+    background-color: #97c2dd;
+    grid-area: corp;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cartões se ajustem */
+    justify-content: center; /* Centraliza os cartões */
+}
+.perguntas{
+    display: grid;
+}
+footer {
+    background-color: rgba(24, 32, 105, 0.938);
+    padding: 10px;
+    padding: 20px;
+    text-align: center;
+    grid-area: pe;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+}
+.robo{
+    width: 200px;
+    position: absolute;
+    right:83%;
+
+}
+/* fim das configuraçoes do footer */
+/*Tabela*/
+.tabela {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #97c2dd;
+    color: #3f3f47;
+}
+
+th, td {
+    padding: 10px 15px;
+    text-align: left;
+}
+
+tbody tr {
+    border-bottom: 2px solid #325a85;
+}
+
+tbody tr:last-child {
+    border-bottom: none;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgba(217, 243, 255, 0.5);
+}
+
+th {
+    font-weight: bold;
+    border-bottom: 2px solid #325a85;
+}
