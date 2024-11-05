@@ -121,6 +121,7 @@ header{
     position: relative;
     left: 60px;
 }
+
 main {
     background-color: #97c2dd;
     grid-area: corp;
@@ -129,9 +130,24 @@ main {
     flex-wrap: wrap; /* Permite que os cartões se ajustem */
     justify-content: center; /* Centraliza os cartões */
 }
-.perguntas{
-    display: grid;
+.veve{
+    height: 50px;
+    width: 200px;
+    position: relative;
+    left: 580px;
 }
+
+.perguntas{
+    display: flex;
+    background-color: #cdd4d8;
+    border-style: double;
+    border-color: #325a85;
+    border-width: 10px;
+    width: 1400px;
+    padding: 5px;
+    flex-direction: column;
+}
+
 footer {
     background-color: rgba(24, 32, 105, 0.938);
     padding: 10px;
