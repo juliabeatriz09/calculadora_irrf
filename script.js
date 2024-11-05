@@ -10,7 +10,7 @@ function irrf(){
    //  fim declaração
    //  inicio calculo 
      if (salario<=2259.20){
-         document.getElementById('valor').innerText="não é necessário pagar imposto";
+         document.getElementById('valor').innerText="Não é necessário pagar imposto";
 
      }else if( salario<=2826.5){ 
         deducao = (169.44 * num_depe) / num_depe;

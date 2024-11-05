@@ -15,13 +15,13 @@ body{
 }
 header{
     grid-area: cab;
-    background-color: rgb(70,130,180);
+    background-color:  rgba(24, 32, 105, 0.938);
     height: 135px;
  }
  
  main{
     grid-area: corp;
-    background-color: rgb(176,196,222);
+    background-color: #97c2dd;
     
  }
 
@@ -142,4 +142,5 @@ button{
     align-items: center;
     text-align: center;
     left: 290px;
+    margin-left: 350px;
 }

@@ -27,12 +27,14 @@ header {
     display: flex;
     align-items: center;
     height: 135px;
+    /* justify-content: center; */
     
 }
 .logo{
     align-items: center;
     text-align: center;
-    margin-left: 380px;
+    /* justify-content: center; */
+    margin-left: 650px;
  }
 
 /* * configuraçao do menu */

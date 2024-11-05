@@ -30,7 +30,7 @@ header{
  .logo{
     align-items: center;
     text-align: center;
-    margin-left: 380px;
+    margin-left: 650px;
  }
  /* fim configuracoes do header */
 
@@ -67,14 +67,14 @@ header{
     margin-bottom: 15px;
     display: flex;
     border-radius: 10px;
-    background-color: rgb(199, 229, 255);
+    background-color: rgba(255, 255, 255, 0.829);
     width: 900px;
     height: 550px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    box-shadow: 0px 10px 30px rgba(3, 2, 61, 0.849);
+    box-shadow: 0px 10px 30px rgba(97, 97, 139, 0.849);
     text-align: center;
 }
 
@@ -82,11 +82,14 @@ h1{
     font-size: 40px;
     margin-bottom: 50px;
     margin-top: 10px;
+    color: #325a85;
 }
 h3{
     margin:5px ;
     font-size: 30px;
+    color: #3f3f47;
 }
+
 .card input{
     padding: 8px;
     margin-bottom: 20px;
@@ -95,10 +98,17 @@ h3{
 button{
     background-color:rgb(70,130,180) ;
     color: white;
-    border-radius: 5px;
-    width: 95px;
-    height: 60px;
+    border-radius: 10px;
+    width: 150px;
+    height: 65px;
     font-size: 20px;
+    border:solid 2px;
+}
+
+.valor{
+    margin-bottom: 15px;
+    color: crimson;
+    font-size: 30px;
 }
 /* fim das configuraçoes do card */
 
