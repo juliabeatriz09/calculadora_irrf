@@ -47,35 +47,35 @@ function quizz(){
     document.getElementbyI('resp_errada6').innertext = "ERRADA!!"
     
 }else {
-   document.getElementbyI('resp_errada6').innertext = "CORRETA!!"
+   document.getElementbyI('resp_correta6').innertext = "CORRETA!!"
    
 }
 if (resp7.value == 'errada'){
     document.getElementbyI('resp_errada7').innertext = "ERRADA!!"
     
 }else {
-   document.getElementbyI('resp_errada7').innertext = "CORRETA!!"
+   document.getElementbyI('resp_correta7').innertext = "CORRETA!!"
    
 }
 if (resp8.value == 'errada'){
     document.getElementbyI('resp_errada8').innertext = "ERRADA!!"
     
 }else {
-   document.getElementbyI('resp_errada8').innertext = "CORRETA!!"
+   document.getElementbyI('resp_correta8').innertext = "CORRETA!!"
    
 }
 if (resp9.value == 'errada'){
     document.getElementbyI('resp_errada9').innertext = "ERRADA!!"
     
 }else {
-   document.getElementbyI('resp_errada9').innertext = "CORRETA!!"
+   document.getElementbyI('resp_correta9').innertext = "CORRETA!!"
    
 }
 if (resp10.value == 'errada'){
     document.getElementbyI('resp_errada10').innertext = "ERRADA!!"
     
 }else {
-   document.getElementbyI('resp_errada10').innertext = "CORRETA!!"
+   document.getElementbyI('resp_correta10').innertext = "CORRETA!!"
    
 }
 
