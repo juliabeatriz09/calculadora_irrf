@@ -125,12 +125,10 @@ main {
     background-color: #97c2dd;
     grid-area: corp;
     padding: 20px;
-    display: flex;
-    flex-wrap: wrap; /* Permite que os cartões se ajustem */
-    justify-content: center; /* Centraliza os cartões */
+
 }
 
-.perguntas1{
+/* .perguntas1{
     margin-top: 30px;
     display: flex;
     flex-direction: column;
@@ -141,7 +139,7 @@ main {
 .perguntas2{
     margin-top: 60px;
     padding-right: 20%;
-}
+} */
 
 footer {
     background-color: rgba(24, 32, 105, 0.938);
