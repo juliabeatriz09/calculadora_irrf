@@ -17,13 +17,28 @@ header{
     grid-area: cab;
     background-color:  rgba(24, 32, 105, 0.938);
     height: 135px;
+
  }
- 
  main{
     grid-area: corp;
     background-color: #97c2dd;
-    
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cartões se ajustem */
+    justify-content: center; /* Centraliza os cartões */ 
  }
+
+.tabela1{
+    /* background-color: #31769e;
+    width: 1000px;
+    height: 100px; */
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgba(97, 97, 139, 0.849);
+    margin: 10px; /* Margem entre os cartões */
+    border-radius: 8px;
+    width: calc(900px - 40px); /* Largura dos cards */
+}
 
  footer{
     position:absolute;
@@ -54,6 +69,7 @@ button{
     width: 80px;
     height: 40px;
     font-size: 17px;
+    border:solid 2px;
 } 
 /* fim das configuraçoes do card */
 
@@ -144,3 +160,4 @@ button{
     left: 290px;
     margin-left: 350px;
 }
+
