@@ -1,83 +1,86 @@
-function quizz(){
-    var  resp1= document.querySelector('input[name="quest1"]:checked') ;
-    var  resp2= document.querySelector('input[name="quest2"]:checked') ;
-    var  resp3= document.querySelector('input[name="quest3"]:checked') ;
-    var  resp4= document.querySelector('input[name="quest4"]:checked') ;
-    var  resp5= document.querySelector('input[name="quest5"]:checked') ;
-    var  resp6= document.querySelector('input[name="quest6"]:checked') ;
-    var  resp7= document.querySelector('input[name="quest7"]:checked') ;
-    var  resp8= document.querySelector('input[name="quest8"]:checked') ;
-    var  resp9= document.querySelector('input[name="quest9"]:checked') ;
-    var  resp10= document.querySelector('input[name="quest10"]:checked') ;
- 
-   if (resp1.value == 'correta'){
-    document.getElementbyI('resp_correta1').innertext = "CORRETA!!"
+function quizz() {
+
+   
+   var resp1 = document.querySelector('input[name="quest1"]:checked').value ;
+   var resp2 = document.querySelector('input[name="quest2"]:checked').value ;
+   var resp3 = document.querySelector('input[name="quest3"]:checked').value ;
+   var resp4 = document.querySelector('input[name="quest4"]:checked').value ;
+   var resp5 = document.querySelector('input[name="quest5"]:checked').value ;
+   var resp6 = document.querySelector('input[name="quest6"]:checked').value ;
+   var resp7 = document.querySelector('input[name="quest7"]:checked').value ;
+   var resp8 = document.querySelector('input[name="quest8"]:checked').value ;
+   var resp9 = document.querySelector('input[name="quest9"]:checked').value ;
+   var resp10= document.querySelector('input[name="quest10"]:checked').value ;
+
+    if(resp1 == 'errada'){
+    document.getElementById('resp_correta1').innerText = "CORRETA!!";
 
    }else {
-    document.getElementbyI('resp_errada1').innertext = "CORRETA!!"
-    
- }  if (resp2.value == 'correta'){
-    document.getElementbyI('resp_correta2').innertext = "CORRETA!!"
+      
+    document.getElementById('resp_errada1').innerText = "CORRETA!!";
+   } 
+     if (resp2 == 'certa'){
+    document.getElementById('resp_correta2').innerText = "CORRETA!!";
     
  }else {
-    document.getElementbyI('resp_errada2').innertext = "ERRADA!!"
+    document.getElementById('resp_errada2').innerText = "ERRADA!!";
     
  }
-   if (resp3.value == 'correta'){
-    document.getElementbyI('resp_correta3').innertext = "CORRETA!!"
+   if (resp3 == 'certa'){
+    document.getElementById('resp_correta3').innerText = "CORRETA!!";
     
  }else  {
-    document.getElementbyI('resp_errada3').innertext = "ERRADA!!"
+    document.getElementById('resp_errada3').innerText = "ERRADA!!";
     
  }
-   if (resp4.value == 'correta'){
-    document.getElementbyI('resp_correta4').innertext = "CORRETA!!"
+   if (resp4 == 'certa'){
+    document.getElementById('resp_correta4').innerText = "CORRETA!!";
     
  }else  {
-    document.getElementbyI('resp_errada4').innertext = "ERRADA!!"
+    document.getElementById('resp_errada4').innerText = "ERRADA!!";
     
  }
-  if (resp5.value == 'correta'){
-    document.getElementbyI('resp_correta5').innertext = "CORRETA!!"
+  if (resp5 == 'certa'){
+    document.getElementById('resp_correta5').innerText = "CORRETA!!";
     
  }else  {
-    document.getElementbyI('resp_errada5').innertext = "ERRADA!!"
+    document.getElementById('resp_errada5').innerText = "ERRADA!!";
 }
- if (resp6.value == 'errada'){
-    document.getElementbyI('resp_errada6').innertext = "ERRADA!!"
+ if (resp6 == 'errada'){
+    document.getElementById('resp_errada6').innerText = "ERRADA!!";
     
 }else {
-   document.getElementbyI('resp_correta6').innertext = "CORRETA!!"
+   document.getElementById('resp_correta6').innerText = "CORRETA!!";
    
 }
-if (resp7.value == 'errada'){
-    document.getElementbyI('resp_errada7').innertext = "ERRADA!!"
+if (resp7 == 'errada'){
+    document.getElementById('resp_errada7').innerText = "ERRADA!!";
     
 }else {
-   document.getElementbyI('resp_correta7').innertext = "CORRETA!!"
+   document.getElementById('resp_correta7').innerText = "CORRETA!!";
    
 }
-if (resp8.value == 'errada'){
-    document.getElementbyI('resp_errada8').innertext = "ERRADA!!"
+if (resp8 == 'errada'){
+    document.getElementById('resp_errada8').innerText = "ERRADA!!";
     
 }else {
-   document.getElementbyI('resp_correta8').innertext = "CORRETA!!"
+   document.getElementById('resp_correta8').innerText = "CORRETA!!";
    
 }
-if (resp9.value == 'errada'){
-    document.getElementbyI('resp_errada9').innertext = "ERRADA!!"
+if (resp9 == 'errada'){
+    document.getElementById('resp_errada9').innerText = "ERRADA!!";
     
 }else {
-   document.getElementbyI('resp_correta9').innertext = "CORRETA!!"
+   document.getElementById('resp_correta9').innerText = "CORRETA!!";
    
 }
-if (resp10.value == 'errada'){
-    document.getElementbyI('resp_errada10').innertext = "ERRADA!!"
+if (resp10 == 'errada'){
+    document.getElementById('resp_errada10').innerText = "ERRADA!!";
     
 }else {
-   document.getElementbyI('resp_correta10').innertext = "CORRETA!!"
+   document.getElementById('resp_correta10').innerText = "CORRETA!!";
    
-}
+} 
 
 
 }
