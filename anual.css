@@ -11,8 +11,9 @@ body{
     /* grid-template-columns: 200px 200px ; */
     /* grid-template-rows: 1fr 2fr 2fr  1fr; */
     
-    background-color: aliceblue;
+    background-color: #97c2dd;
 }
+
 header{
     grid-area: cab;
     background-color:  rgba(24, 32, 105, 0.938);
@@ -38,6 +39,8 @@ header{
     margin: 10px; /* Margem entre os cartões */
     border-radius: 8px;
     width: calc(900px - 40px); /* Largura dos cards */
+    position: relative;
+    left: 100px;
 }
 
  footer{
@@ -71,6 +74,13 @@ button{
     font-size: 17px;
     border:solid 2px;
 } 
+
+.toop{
+    position: relative;
+    top: 100px;
+    right: 570px;
+    background-color: aliceblue;
+}
 /* fim das configuraçoes do card */
 
 /* configuraçao do menu */
