@@ -230,3 +230,13 @@ th {
     font-weight: bold;
     border-bottom: 2px solid #325a85;
 }
+.lkca{
+    color: #325a85;
+    padding-left: 145px;
+    outline: #97c2dd;
+    text-align: center;
+    align-items: center;
+    font-weight: 1000;
+    font-size: 20px;
+    cursor: pointer;
+}
