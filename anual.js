@@ -1,5 +1,6 @@
 function holerite(){
- let descri = document.getElementById('descri');
+  
+ let descri = document.getElementById('descri').value;
  
  let refer = document.getElementById('refe').value;
 
@@ -7,18 +8,16 @@ function holerite(){
  
  let desco = document.getElementById('pandora').value;
  
- let linha =
- 
-   `<Tr>
-
-     <th>${descri}</th>
-     <th>${refer}</th>
-     <th>${prov}</th>
-     <th>${desco}</th>
-     
-   </Tr>`
+ let linha = 
+   `<tr>
+     <td>${descri}</td>
+     <td>${refer}</td>
+     <td>${prov}</td>
+     <td>${desco}</td>
+     <td>${desco}</td>
+   </tr>`
  ;
 
+  document.getElementById("caixinha").innerHTML = linha;
+  
 }
-  document.getElementById('caixinha').innerText = linha;
-alert("aaa");

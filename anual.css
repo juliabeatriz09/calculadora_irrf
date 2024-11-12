@@ -24,6 +24,7 @@ header{
     grid-area: corp;
     background-color: #97c2dd;
     padding: 20px;
+    flex-direction: column;
     display: flex;
     flex-wrap: wrap; /* Permite que os cartões se ajustem */
     justify-content: center; /* Centraliza os cartões */ 
@@ -38,9 +39,8 @@ header{
     box-shadow: 0px 5px 10px rgba(97, 97, 139, 0.849);
     margin: 10px; /* Margem entre os cartões */
     border-radius: 8px;
-    width: calc(900px - 40px); /* Largura dos cards */
-    position: relative;
-    left: 100px;
+    width: 860px; /* Largura dos cards */
+
 }
 
  footer{
@@ -76,9 +76,6 @@ button{
 } 
 
 .toop{
-    position: relative;
-    top: 100px;
-    right: 570px;
     background-color: aliceblue;
 }
 /* fim das configuraçoes do card */
@@ -90,9 +87,7 @@ button{
     box-shadow: 2px 2px 5px rgb(15, 14, 87);
     width: 0px;
     transition: all 0.8s ease;
-    position: relative;
-    margin: 5px;
-    bottom: 450px;
+
 }
 .menu li{
     list-style: none;
