@@ -29,13 +29,22 @@ header {
     height: 135px;
     
 }
-
+.box{
+    align-items: center;
+    justify-content: center;
+    
+}
 .logo{
     align-items: center;
     text-align: center;
-    margin-left: 380px;
- }
+    margin-left: 650px;
+}
 
+.logotipo{
+    justify-content: center;
+    text-align: center;
+
+}
 /* * configuraçao do menu */
 header{
     position: relative;
@@ -75,9 +84,13 @@ header{
     padding-left: 6px;
 
 }
-
+h2{
+    color:rgba(24, 32, 105, 0.938);
+    font-size: 25px;
+    margin-bottom: 10px;
+}
 h3{
-    font-size: 21px;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 button{
@@ -92,7 +105,7 @@ button{
 }
 .botaoz{
     display: none;
-    color: #3e88b3;
+    color:#31769e
 }
 .botaoz:checked+nav{
     width: 200px;
