@@ -20,6 +20,7 @@ header{
     height: 135px;
 
  }
+
  main{
     grid-area: corp;
     background-color: #97c2dd;
@@ -40,7 +41,14 @@ header{
     margin: 10px; /* Margem entre os cartões */
     border-radius: 8px;
     width: 860px; /* Largura dos cards */
+    position: relative;
+    left: 380px;
+}
 
+.kiwi{
+    text-align: center;
+    background-color: #328dc2;
+    color: aliceblue;
 }
 
  footer{
@@ -87,6 +95,8 @@ button{
     box-shadow: 2px 2px 5px rgb(15, 14, 87);
     width: 0px;
     transition: all 0.8s ease;
+    position: relative;
+    bottom: 440px;
 
 }
 .menu li{
@@ -95,6 +105,7 @@ button{
     padding: 10px;
     text-align: center;
     font-size: 23px;
+
 }
 .menu li a{
     color:#000000;
