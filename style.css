@@ -32,87 +32,8 @@ header{
     text-align: center;
     margin-left: 650px;
  }
- /* fim configuracoes do header */
 
- 
- /* configuracoes main */
- main{
-    grid-area: corp;
-    background-color:   #97c2dd;
-    display: flex;
-    justify-content: center;
-    height: auto;
- }
-  /* configuracoes main */
-
- /* configuracoes do footer */
- footer{
-    position: relative;
-    width: 100%;
-    bottom: 0;
-    grid-area: pe;
-    background-color: rgba(24, 32, 105, 0.938);
-    height: 150px;
- }
-.robozinho{
-    width: 200px;
-    margin-top: 20px;
-    margin: 15px;
-}
-  /*fim das configuracoes do footer */
-
- /* configuraçoes do card */
- .card{
-    margin-top: 55px;
-    margin-bottom: 15px;
-    display: flex;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.829);
-    width: 900px;
-    height: 550px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    box-shadow: 0px 10px 30px rgba(97, 97, 139, 0.849);
-    text-align: center;
-}
-
-h1{
-    font-size: 40px;
-    margin-bottom: 50px;
-    margin-top: 10px;
-    color: #325a85;
-}
-h3{
-    margin:5px ;
-    font-size: 30px;
-    color: #3f3f47;
-}
-
-.card input{
-    padding: 8px;
-    margin-bottom: 20px;
-}
-
-button{
-    background-color:rgb(70,130,180) ;
-    color: white;
-    border-radius: 10px;
-    width: 150px;
-    height: 65px;
-    font-size: 20px;
-    border:solid 2px;
-}
-
-.valor{
-    margin-bottom: 15px;
-    color: crimson;
-    font-size: 30px;
-}
-/* fim das configuraçoes do card */
-
-/* configuraçao do menu */
+ /* configuraçao do menu */
 header{
     position: relative;
 }
@@ -120,7 +41,6 @@ header{
     position: absolute;
     top: 0;
 }
-
 
 .menu nav{
     background-color: white;
@@ -197,3 +117,85 @@ header{
 
 }
 /* final das configuracoes do menu */
+
+ /* fim configuracoes do header */
+
+ 
+ /* configuracoes main */
+ main{
+    grid-area: corp;
+    background-color:   #97c2dd;
+    display: flex;
+    justify-content: center;
+    height: auto;
+ }
+
+ /* configuraçoes do card */
+ .card{
+    margin-top: 55px;
+    margin-bottom: 60px;
+    display: flex;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.829);
+    width: 900px;
+    height: 550px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 10px 30px rgba(97, 97, 139, 0.849);
+    text-align: center;
+}
+
+h1{
+    font-size: 40px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    color: #325a85;
+}
+h3{
+    margin:5px ;
+    font-size: 30px;
+    color: #3f3f47;
+}
+
+.card input{
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+button{
+    background-color:rgb(70,130,180) ;
+    color: white;
+    border-radius: 10px;
+    width: 150px;
+    height: 65px;
+    font-size: 20px;
+    border:solid 2px;
+}
+
+.valor{
+    margin-bottom: 15px;
+    color: crimson;
+    font-size: 30px;
+}
+/* fim das configuraçoes do card */
+ /* fim das configuracoes main */
+
+
+ /* configuracoes do footer */
+ footer{
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    grid-area: pe;
+    background-color: rgba(24, 32, 105, 0.938);
+    height: 210px;
+ }
+.robozinho{
+    width: 200px;
+    margin-top: 20px;
+    margin: 15px;
+}
+  /*fim das configuracoes do footer */
+
