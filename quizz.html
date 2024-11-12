@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt/br">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="quizz.css">
@@ -57,16 +60,15 @@
 <!-- fim do menu retratil -->
     </header>
     <main>
-    
-    <div class="perguntas1">
-        <h3>Questão 1:Qual é a principal finalidade do Imposto de Renda Retido na Fonte (IRRF)?</h3> 
-        <input type="radio" name="quest1" value="errada">  a- Financiar a previdência social <br>
-        <input type="radio" name="quest1" value="errada"> b- Recolher imposto de renda de empresas <br>
-        <input type="radio" name="quest1" value="certa"> c- Efetuar o pagamento de tributos de forma antecipada e prática <br>
-        <input type="radio" name="quest1" value="errada"> d- Financiar obras públicas municipais<br>
-        <p id="resp_correta1" class="certa" ></p>
-        <p id="resp_errada1" class="errada"></p>
-    </div>
+        <div class="perguntas1">
+            <h3>Questão 1:Qual é a principal finalidade do Imposto de Renda Retido na Fonte (IRRF)?</h3> 
+            <input type="radio" name="quest1" value="errada"> a- Financiar a previdência social <br>
+            <input type="radio" name="quest1" value="errada"> b- Recolher imposto de renda de empresas <br>
+            <input type="radio" name="quest1" value="certa"> c- Efetuar o pagamento de tributos de forma antecipada e prática <br>
+            <input type="radio" name="quest1" value="errada"> d- Financiar obras públicas municipais<br>
+            <p id="resp_correta1" class="certa" ></p>
+            <p id="resp_errada1" class="errada"></p>
+        </div>
 
     <div class="perguntas1">
         <h3>Questão 2:O IRRF incide sobre:</h3>
@@ -109,7 +111,7 @@
         <p id="resp_errada5" class="errada"></p>
     </div>
 
-    <div class="perguntas2">
+    <div class="perguntas1">
         <h3>Questão 6:A partir de qual valor o IRRF é aplicado sobre salários mensais de um trabalhador, conforme a tabela progressiva?
         </h3>
         <input type="radio" name="quest6" value="errada"> a- R$ 1.200,00 <br>
@@ -120,7 +122,7 @@
         <p id="resp_errada6" class="errada"></p>
     </div>
 
-    <div class="perguntas2">
+    <div class="perguntas1">
         <h3>Questão 7:Sobre os rendimentos de aluguel, o IRRF é:</h3>
         <input type="radio" name="quest7" value="errada"> a- Retido somente em casos de valores superiores a R$ 10.000,00 <br>
         <input type="radio" name="quest7" value="certa">b- Retido diretamente na fonte, dependendo do valor do aluguel  <br>
@@ -130,7 +132,7 @@
         <p id="resp_errada7" class="errada"></p>
     </div>
 
-    <div class="perguntas2">
+    <div class="perguntas1">
         <h3>Questão 8:Qual é a alíquota do IRRF para um salário mensal de R$ 6.000,00 (sem deduções)?</h3>
         <input type="radio" name="quest8" value="errada"> a- 7,5% <br>
         <input type="radio" name="quest8" value="errada"> b- 15% <br>
@@ -140,7 +142,7 @@
         <p id="resp_errada8" class="errada"></p>
     </div>
 
-    <div class="perguntas2">
+    <div class="perguntas1">
         <h3>Questão 9:A quem compete efetuar a retenção do IRRF nos pagamentos feitos a prestadores de serviço?</h3>
         <input type="radio" name="quest9" value="errada"> a- O contribuinte, pessoa física, que recebe o pagamento <br>
         <input type="radio" name="quest9" value="errada"> b- A Receita Federal do Brasil <br>
@@ -150,7 +152,7 @@
         <p id="resp_errada9" class="errada"></p>
     </div>
 
-    <div class="perguntas2">    
+    <div class="perguntas1">    
         <h3>Questão 10:Qual dos rendimentos abaixo está sujeito à retenção do IRRF?</h3>
         <input type="radio" name="quest10" value="errada"> a- Dividendos distribuídos por empresas <br>
         <input type="radio" name="quest10" value="errada"> b- Remuneração de aposentadoria pelo INSS <br>
@@ -159,10 +161,9 @@
         <p id="resp_correta10" class="certa"></p>
         <p id="resp_errada10" class="errada"></p>
         
-        <button type="button" onclick="quizz()" class="ver">Verificar</button>
-        <script src="quizz.js"></script>
     </div>
-
+    <button type="button" onclick="quizz()" class="ver"><h4>Verificar</h4></button>
+    <script src="quizz.js"></script>
     </main>
     <footer>
         <img src="img/chat.png" class="robo" alt="ppp">
