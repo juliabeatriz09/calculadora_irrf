@@ -1,5 +1,6 @@
+
 function holerite(){
-  
+ i // inicio definição de variaveis
  let descri = document.getElementById('descri').value;
  
  let refer = document.getElementById('refe').value;
@@ -7,7 +8,8 @@ function holerite(){
  let prov = document.getElementById('prov').value;
  
  let desco = document.getElementById('pandora').value;
- 
+//  fim definição
+// inicio gerador tabela
  let linha = 
    `<tr>
      <td>${descri}</td>
@@ -19,5 +21,5 @@ function holerite(){
  ;
 
   document.getElementById("caixinha").innerHTML = linha;
-  
+  // fim gerador
 }

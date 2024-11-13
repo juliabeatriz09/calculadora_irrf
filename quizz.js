@@ -1,6 +1,6 @@
 function quizz() {
 
-   
+   // inicio definição de variaveis
    var resp1 = document.querySelector('input[name="quest1"]:checked').value ;
    var resp2 = document.querySelector('input[name="quest2"]:checked').value ;
    var resp3 = document.querySelector('input[name="quest3"]:checked').value ;
@@ -11,7 +11,8 @@ function quizz() {
    var resp8 = document.querySelector('input[name="quest8"]:checked').value ;
    var resp9 = document.querySelector('input[name="quest9"]:checked').value ;
    var resp10= document.querySelector('input[name="quest10"]:checked').value ;
-
+// fim definições
+// inicio corretor de respostas
     if(resp1 == 'errada'){
     document.getElementById('resp_correta1').innerText = "CORRETA!!";
 
@@ -81,6 +82,6 @@ if (resp10 == 'errada'){
    document.getElementById('resp_correta10').innerText = "CORRETA!!";
    
 } 
-
+// fim corretor
 
 }
