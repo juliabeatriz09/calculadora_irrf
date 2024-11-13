@@ -11,6 +11,23 @@ body{
     background-color: rgb(176,196,222);
 
 }
+@media only screen and (max-device-width: 768px) {
+    .menu {
+        width:100%;
+    }
+    body{
+        grid-template-areas: 
+        "cab"
+        "corp"
+        "pe";
+        grid-template-columns: auto;
+        grid-template-rows: 200px auto auto;
+    }
+    .logo{
+        display: flex;
+    }
+}
+
 /* configuracoes do header */
 header{
     grid-area: cab;

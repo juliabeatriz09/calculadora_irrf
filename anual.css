@@ -14,6 +14,23 @@ body{
     background-color: #97c2dd;
 }
 
+@media only screen and (max-device-width: 768px) {
+    .menu {
+        width:100%;
+    }
+    body{
+        grid-template-areas: 
+        "cab"
+        "corp"
+        "pe";
+        grid-template-columns: auto;
+        grid-template-rows: 200px auto auto;
+    }
+    .logo{
+        display: flex;
+    }
+}
+/* fim das configuraçoes do grid */
 header{
     grid-area: cab;
     background-color:  rgba(24, 32, 105, 0.938);
