@@ -21,15 +21,17 @@ body{
 }
 /* inicio das configuraçoes do header */
 header {
-    grid-area: cab;
+    grid-area: cab;/*grid*/
     background-color: rgba(24, 32, 105, 0.938);
     padding: 10px;
     display: flex;
     align-items: center;
     height: 135px;
+    position: relative;
     /* justify-content: center; */
     
 }
+/*ajustes de logo*/
 .logo{
     align-items: center;
     text-align: center;
@@ -37,10 +39,7 @@ header {
     margin-left: 650px;
  }
 
-/* * configuraçao do menu */
-header{
-    position: relative;
-}
+/* configuraçao do menu retratil*/
 .menu{
     position: absolute;
     top: 0;
@@ -76,7 +75,7 @@ header{
     padding-left: 6px;
 
 }
-
+/*configurações do botão do menu retratil*/
 .botaoz{
     display: none;
     color: #3e88b3;
@@ -107,18 +106,14 @@ header{
     color: rgb(217, 243, 255);
     text-shadow: 1px 1px 8px #fcdbe4;
 }
-
 .menu li a:hover{
     color: #31769e;
     text-shadow: 0 0 5px rgb(217, 243, 255);
 }
-
-
 .icon{
     width: 70px;
     margin-top: 20px;
 }
-
 .chat{
     position: relative;
     left: 60px;
@@ -130,24 +125,24 @@ header{
 /* inicio das configuraçoes do main */
 main {
     background-color: #97c2dd;
-    grid-area: corp;
+    grid-area: corp;/*grid*/
     padding: 20px;
     display: flex;
-    flex-wrap: wrap; /* Permite que os cartões se ajustem */
-    justify-content: center; /* Centraliza os cartões */
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card, .card2, .card3{
     background: rgb(255, 255, 255);
     padding: 20px;
     box-shadow: 0px 5px 10px rgba(97, 97, 139, 0.849);
-    margin: 10px; /* Margem entre os cartões */
+    margin: 10px;
     border-radius: 8px;
-    width: calc(600px - 40px); /* Largura dos cards */
+    width: calc(600px - 40px);
 }
-
+/*configuração de fontes*/
 main h1 {
-    color: #325a85; /* Azul para os títulos */
+    color: #325a85;
     margin-bottom: 10px;
     font-size: 30px;
     text-align: center;
@@ -168,33 +163,11 @@ main li{
     margin-left: 15px;
     margin-top:5px;
 }
-
+/*ajustes da tabela*/
 .tabela {
     margin-top: 10%;
     width: 500px;
 }
-/* fim das configuraçoes do footer */
-
-/* inicio das configuraçoes do footer */
-footer {
-    background-color: rgba(24, 32, 105, 0.938);
-    padding: 10px;
-    padding: 20px;
-    text-align: center;
-    grid-area: pe;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    height: 150px;
-}
-.robo{
-    width: 200px;
-    position: absolute;
-    right:83%;
-
-}
-/* fim das configuraçoes do footer */
-/*Tabela*/
 .tabela {
     padding: 20px;
 }
@@ -240,3 +213,24 @@ th {
     font-size: 20px;
     cursor: pointer;
 }
+/* fim das configuraçoes do footer */
+
+/* inicio das configuraçoes do footer */
+footer {
+    background-color: rgba(24, 32, 105, 0.938);
+    padding: 10px;
+    padding: 20px;
+    text-align: center;
+    grid-area: pe;/*grid*/
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+}
+/*mascote*/
+.robo{
+    width: 200px;
+    position: absolute;
+    right:83%;
+}
+/* fim das configuraçoes do footer */
