@@ -1,4 +1,4 @@
-/* main.css */
+
 * {
     margin: 0;
     padding: 0;
@@ -32,8 +32,10 @@ header {
 .box{
     align-items: center;
     justify-content: center;
-    
+    display: flex;
+    flex-direction: column;
 }
+
 .logo{
     align-items: center;
     text-align: center;
@@ -43,7 +45,19 @@ header {
 .logotipo{
     justify-content: center;
     text-align: center;
+}
 
+/* configuraçoes das divs */
+.perguntas1{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width:55%;
+    background-color:#fffbfb;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgba(97, 97, 139, 0.849);
 }
 /* * configuraçao do menu */
 header{
@@ -84,25 +98,7 @@ header{
     padding-left: 6px;
 
 }
-h2{
-    color:rgba(24, 32, 105, 0.938);
-    font-size: 25px;
-    margin-bottom: 10px;
-}
-h3{
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-button{
-    margin-top: 20px;
-    background-color: rgb(70, 130, 180);
-    color: white;
-    border-radius: 9px;
-    width: 90px;
-    height: 50px;
-    font-size: 17px;
-    border:none
-}
+
 .botaoz{
     display: none;
     color:#31769e
@@ -149,6 +145,7 @@ button{
     left: 60px;
 }
 
+/* inicio das configuraçoes do corpo */
 main {
     background-color: #97c2dd;
     grid-area: corp;
@@ -156,19 +153,56 @@ main {
 
 }
 
-/* .perguntas1{
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    
+/* configuraçoes das letras */
+h2{
+    color:rgba(24, 32, 105, 0.938);
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+h3{
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
-.perguntas2{
-    margin-top: 60px;
-    padding-right: 20%;
-} */
+/* configuraçao do botao */
+button{
+    margin-top: 20px;
+    background-color: rgb(70, 130, 180);
+    color: white;
+    border-radius: 10px;
+    width: 200px;
+    height: 80px;
+    font-size: 28px;
+    border:solid 2px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: 1s;
+}
+button:hover{
+    box-shadow:1px 2px 3px 3px #ff0b0b00;
+    transform: scale(1.1);
 
+}
+
+/* configuraçao do resultado */
+.certa{
+    margin-bottom: 15px;
+    color: rgb(60, 168, 27);
+    font-size: 30px;
+    margin: 10px;
+}
+.errada{
+    margin-bottom: 15px;
+    color: crimson;
+    font-size: 30px;
+    margin: 10px;
+}
+/* fim das configuraçoes do corpo */
+
+/*inicio das configuraçoes do rodape   */
 footer {
     background-color: rgba(24, 32, 105, 0.938);
     padding: 10px;
@@ -186,51 +220,8 @@ footer {
     right:83%;
 
 }
-.perguntas1{
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    width:55%;
-    background-color:#fffbfb;
-    margin-top: 30px;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0px 5px 10px rgba(97, 97, 139, 0.849);
-}
+
 /* fim das configuraçoes do footer */
-/*Tabela
-.tabela {
-    padding: 20px;
-}
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
 
-thead {
-    background-color: #97c2dd;
-    color: #3f3f47;
-}
 
-th, td {
-    padding: 10px 15px;
-    text-align: left;
-}
-
-tbody tr {
-    border-bottom: 2px solid #325a85;
-}
-
-tbody tr:last-child {
-    border-bottom: none;
-}
-
-tbody tr:nth-child(odd) {
-    background-color: rgba(217, 243, 255, 0.5);
-}
-
-th {
-    font-weight: bold;
-    border-bottom: 2px solid #325a85;
-}
