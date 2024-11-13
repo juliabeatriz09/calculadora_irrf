@@ -1,6 +1,6 @@
 
 function holerite(){
- i // inicio definição de variaveis
+  // inicio definição de variaveis
  let descri = document.getElementById('descri').value;
  
  let refer = document.getElementById('refe').value;
@@ -21,5 +21,6 @@ function holerite(){
  ;
 
   document.getElementById("caixinha").innerHTML = linha;
-  // fim gerador
+  
 }
+ // fim gerador
