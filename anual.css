@@ -31,12 +31,32 @@ body{
     }
 }
 /* fim das configuraçoes do grid */
-header{
-    grid-area: cab;
-    background-color:  rgba(24, 32, 105, 0.938);
+/* inicio das configuraçoes do header */
+header {
+    text-align: center;
+    grid-area: cab;/*grid*/
+    background-color: rgba(24, 32, 105, 0.938);
+    padding: 10px;
+    display: flex;
+    align-items: center;
     height: 135px;
+    position: relative;
 
- }
+    
+}
+/*ajustes de logo*/
+.logo{
+    justify-content: center;
+    text-align: center;  
+}
+
+.logodiv{
+    margin: auto;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
 
  main{
     grid-area: corp;
@@ -54,6 +74,7 @@ header{
     height: 100px; */
     background: rgb(255, 255, 255);
     padding: 20px;
+    display: flex;
     box-shadow: 0px 5px 10px rgba(97, 97, 139, 0.849);
     margin: 10px; /* Margem entre os cartões */
     border-radius: 8px;
@@ -67,15 +88,20 @@ header{
     background-color: #328dc2;
     color: aliceblue;
 }
-
- footer{
+footer{
     position:absolute;
     width: 100%;
     bottom: 0;
     grid-area: pe;
     background-color:  rgba(3, 12, 94, 0.938);
-    height: 100px;
+    height: 135px;
  }
+ /*mascote*/
+.robo{
+    bottom: 2%;
+    width: 200px;
+    position: absolute;
+}
  
  /* footer{
      grid-area: pe;
@@ -105,7 +131,11 @@ button{
 }
 /* fim das configuraçoes do card */
 
-/* configuraçao do menu */
+/* configuraçao do menu retratil*/
+.menu{
+    position: absolute;
+    top: 0;
+}
 .menu nav{
     background-color: white;
     border-radius: 20px;
@@ -113,8 +143,7 @@ button{
     width: 0px;
     transition: all 0.8s ease;
     position: relative;
-    bottom: 440px;
-
+    margin: 5px;
 }
 .menu li{
     list-style: none;
@@ -122,7 +151,6 @@ button{
     padding: 10px;
     text-align: center;
     font-size: 23px;
-
 }
 .menu li a{
     color:#000000;
@@ -135,16 +163,14 @@ button{
     transition: all 0.5s ease;
 }
 .menu label{
-    position: relative;
-    bottom: 10px;
     font-size: 28px;
     padding-left: 6px;
 
 }
-
+/*configurações do botão do menu retratil*/
 .botaoz{
     display: none;
-    color: #72CBFF;
+    color: #3e88b3;
 }
 .botaoz:checked+nav{
     width: 200px;
@@ -153,7 +179,7 @@ button{
 }
 
 .botaoz:checked+nav li{
-    border-bottom: dashed 1px rgb(30, 28, 116);
+    border-bottom: dashed 1px rgb(63, 116, 167) ;
     text-align: left;
 }
 
@@ -169,28 +195,19 @@ button{
 }
 
 .fa-bars:hover{
-    color: white;
+    color: rgb(217, 243, 255);
     text-shadow: 1px 1px 8px #fcdbe4;
 }
-
 .menu li a:hover{
     color: #31769e;
-    text-shadow: 0 0 5px white;
+    text-shadow: 0 0 5px rgb(217, 243, 255);
 }
-
-
 .icon{
     width: 70px;
-    position: relative;
-    bottom: 130px;
-    margin-bottom: 300px;
+    margin-top: 20px;
 }
-/* final das configuracoes do menu */
-.logo{
+.chat{
     position: relative;
-    align-items: center;
-    text-align: center;
-    left: 290px;
-    margin-left: 350px;
+    left: 60px;
 }
-
+/* final menu */
