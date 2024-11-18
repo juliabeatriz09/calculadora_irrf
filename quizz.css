@@ -35,16 +35,18 @@ header {
     display: flex;
     flex-direction: column;
 }
-
+/*ajustes de logo*/
 .logo{
-    align-items: center;
-    text-align: center;
-    margin-left: 650px;
+    justify-content: center;
+    text-align: center;  
 }
 
-.logotipo{
+.logodiv{
+    margin: auto;
+    margin-top: -20px;
+    display: flex;
     justify-content: center;
-    text-align: center;
+    align-items: center; 
 }
 
 /* configuraçoes das divs */
@@ -207,20 +209,18 @@ footer {
     background-color: rgba(24, 32, 105, 0.938);
     padding: 10px;
     padding: 20px;
-    text-align: center;
+    text-align: left;
     grid-area: pe;
     position: relative;
     bottom: 0;
     width: 100%;
     height: 150px;
 }
+/*mascote*/
 .robo{
     width: 200px;
     position: absolute;
-    right:83%;
-
 }
-
 /* fim das configuraçoes do footer */
 
 
