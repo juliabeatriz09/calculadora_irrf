@@ -1,0 +1,438 @@
+/* inicio das configuraçoes do grid */
+ body{
+    display: grid;
+    grid-template-areas:
+    "cabeca cabeca cabeca "
+    "corpo corpo corpo "
+    "rodape rodape rodape";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-row: auto auto auto;
+}
+@media only screen and (max-device-width: 400px) {
+    .menu { width:100%; }
+   body{
+    grid-template-areas: 
+    "cabeca"
+    "corpo"
+    "rodape";
+    grid-template-columns: auto;
+    grid-template-rows: 200px  auto;
+     }
+    .logo{
+        display: none;
+    }
+} 
+
+/* fimdas configuraçoes do grid  */
+
+
+/* inicio das configuraçoes do cabeçalho  */
+header{
+    grid-area: cabeca;
+    background-color: rgba(248, 162, 49, 0.966);
+    height: auto;
+    align-items: center;
+    text-align: center;
+
+}
+ 
+
+header li {
+  text-decoration: none;
+  margin-left: 9px;
+  padding: x;
+  display: inline;
+  position: relative;
+  top: 7px;
+  flex-direction: row;
+  background-color: #f7c262;
+  box-shadow: 3px 1px 3px #a571029c;
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(139, 130, 253);
+  margin: 0 10px 0 10px;
+ 
+}
+header nav{
+  background-color: #ffe5b5;
+  height: 40px;
+}
+
+header a{
+  text-decoration: none;
+  color: #0e0808;
+}
+
+ header img{
+    height: 300px;
+    align-items: center;
+}
+/* fim das configuraçoes do cabeçalho  */
+
+/* inicio das configuraçoes do corpo  */
+main{
+    grid-area: corpo;
+    background-color:  #ffe5b5;
+    text-align: center;
+    height: 1000px;
+    align-items: center;
+
+    background: url("img/fundotijolinho") center center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    margin-top: 5px;
+ }
+
+ main a {
+    background-color:rgba(4, 47, 83, 0.801);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px;
+  
+ }
+ 
+ main h1{
+   color: rgb(32, 30, 30);
+   width: 800px;
+   text-align: center;
+   position: relative;
+   left: 20%;
+
+   text-align: center;
+   text-align: center;
+   background-color:  rgba(4, 47, 83, 0.801);
+   /* border-style: dotted;
+   border-width: 4px;
+   border-color: #f7cd7e; */
+   padding: 5px;
+   width: 300px;
+   text-align: center;
+   align-items: center;
+   justify-items: center;
+   position: relative;
+   left: 41%;
+   color: #ffe5b5;
+   border-radius: 10px;
+   
+ }
+
+ main h2{
+    text-align: center;
+    margin: 3px;
+ }
+
+ .button {
+  color: #0e0808;
+  background: #fcf80b;
+  border-radius: 50px;
+  border: none;
+  transition: .5s ease;
+  box-shadow: 0 15px 60px -5px rgba(0, 0, 0, .5);
+  width: 300px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 6px;
+  font-size: large;
+
+}
+
+
+
+.button:hover {
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.button:hover + .drip-1{
+  height: 50px;
+}
+
+.button:hover ~ .drip-2{
+  height: 40px;
+}
+
+.button:hover ~ .drip-3{
+  height: 50px;
+}
+
+
+
+.drip-1{
+  position:absolute;
+  left: 580px;
+  width:5px;
+  height:1px;
+  border-radius:0 0 21px 21px;
+  background:#fcf80b;
+  margin: 0px 220px;
+  transition: height 0.9s ease;
+}
+
+
+.drip-2{
+  position:absolute;
+  left: 590px;
+  width:4px;
+  height:0px;
+  border-radius:0 0 21px 21px;
+  background:#fcf80b;
+  margin: 0px 200px;
+  transition: height 1.5s ease;
+}
+
+.drip-3{
+  position:absolute;
+  left: 320px;
+  width:7px;
+  height:0px;
+  border-radius:0 0 21px 21px;
+  background:#fcf80b;
+  margin: 0px 230px;
+  transition: height .7s ease;
+}
+
+/* fim botão animado */
+
+
+  .betina{
+   background-color:#ffe5b5;
+   width: 100%;
+   height: 30px;
+
+  }
+
+  .button a{
+    text-decoration: none;
+    color: rgb(42, 97, 199);
+  }
+  /* fim botão animado */  
+
+/* inicio alterações div */
+div img{
+    width: 100px;
+    
+}
+/*  inicio sections */
+.comple {
+  align-items: center;
+  justify-content: center;
+  padding:2%;
+  display:flex;
+  margin: 1px;
+  background-color:  rgb(252, 194, 87);
+  border-radius: 15px;
+  border-style: double;
+  border-width: 5px;
+  border-color: rgb(17, 68, 92);
+}
+
+.cheese{
+  align-items: center;
+  justify-content: center;
+  padding:2%;
+  border-radius: 15px;
+    display: flex;
+    margin: 1px;
+    background-color:  rgb(252, 194, 87);
+    border-style: double;
+    border-width: 5px;
+    border-color: rgb(17, 68, 92);
+}
+
+.bread{
+  align-items: center;
+  justify-content: center;
+   padding:2%;
+    border-radius: 15px;
+    display: flex;
+    margin: 1px;
+    background-color:  rgb(252, 194, 87);
+    border-style: double;
+    border-width: 5px;
+    border-color: rgb(17, 68, 92);
+    
+}
+
+.sicha{
+  display: flex;
+  margin-bottom: 10px;
+  background-color: rgb(252, 194, 87);
+  margin: 1px;
+  padding: 20px;
+  align-items: center;
+  flex-direction: row;
+  border-style: double;
+  border-width: 5px;
+  border-color: rgb(17, 68, 92)   
+}
+/* fim sections */
+
+/* inicio divs */
+.checkbox{
+   margin: 2px;
+}
+.pao{
+
+    width: 250px;
+    flex-direction: row;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin:10px;
+    justify-content:r;
+    transition: 1s;
+    box-shadow: 0px 5px 10px rgba(90, 52, 9, 0.514);
+    border-style: double;
+    border-width: 10px;
+    border-color: rgb(17, 68, 92);
+    position: relative;
+    right: 1%;
+    background-color: beige;
+
+}
+
+.Queijo{
+  width: 200px;
+  flex-direction: row;
+  border-radius: 10px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin:10px;
+  justify-content:r;
+  transition: 1s;
+  box-shadow: 0px 5px 10px rgba(90, 52, 9, 0.514);
+  border-style: double;
+  border-width: 10px;
+  border-color: rgb(17, 68, 92);
+  position: relative;
+  right: 1%;
+  background-color: beige;
+}
+
+  
+ 
+
+.comp{
+    width: 250px;
+    flex-direction: row;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 5px;
+    justify-content: center;
+    transition: 1s;
+    box-shadow: 0px 5px 10px rgba(90, 52, 9, 0.514);
+    border-style: double;
+    border-width: 10px;
+    border-color: rgb(17, 68, 92);
+    position: relative;
+    right: 10px;
+    background-color: beige;
+}
+
+.salsi{
+    width: 200px;
+    height: 160px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    margin:10px;
+    margin-top: 12px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+    box-shadow: 0px 5px 10px rgba(90, 52, 9, 0.514);
+    border-style:double;
+    border-width: 10px;
+    border-color: rgb(17, 68, 92);
+    position: relative;
+    left: 20%;
+    bottom: 30px;
+    background-color: beige;
+
+}
+
+.check{
+  position: relative;
+  top: 8px;
+}
+
+.cont{
+  display: flex;
+  position: relative;
+  left: 250px;
+  background-color: #ffe5b5;
+  border-radius: 10px;
+  height: 30px;
+}
+
+.quan{
+  position: relative;
+  bottom: 30px;
+  left: 320px;
+}
+
+
+/* fim configurações */
+/* fim das configuraçoes do corpo */
+
+/* inicio das configuraçoes do reodape  */
+footer{
+    grid-area: rodape;
+    background-color:rgba(252, 161, 44, 0.966);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 2px;
+    margin: 2px;
+    height: auto;
+    max-height: 300px;
+        
+ }
+
+/*  configuraçoes imagens do rodape  */
+ .ifood{
+    width: 100px;
+    height: auto;
+}
+
+.much{
+    width: 100px;
+    height: auto;
+}
+
+.rappi{
+    width: 100px;
+    height: auto;
+}
+
+.app{
+  position: relative;
+  bottom: 150px;
+  }
+
+.chat{
+  display: flex;
+  flex-direction: row;
+  background-color: #f0c169;
+  width: 230px;
+
+}
+.ch{
+  position: relative;
+  right: 560px;
+  top: 20px;
+}
+/* fim das configuraçoes do reodape  */
+
+

@@ -1,4 +1,7 @@
-
+*{
+    margin: 0;
+    padding: 0;
+}
 /* configuraçao do grid */
 body{
     display: grid;
@@ -10,22 +13,22 @@ body{
     grid-row: auto auto auto;
 }
 
- @media only screen and (max-device-width: 768px) {
-     .menu { width:100%; }
+@media only screen and (max-device-width: 768px) {
+    .menu {
+        width:100%;
+    }
     body{
-     grid-template-areas: 
-     "cabeca"
-     "corpo"
-     "rodape";
-     grid-template-columns: auto;
-     grid-template-rows: 200px auto auto;
-      }
-     .logo{
-         display: flex;
-     }
-    
-    
- }
+        grid-template-areas: 
+        "cabeca"
+        "corpo"
+        "rodape";
+        grid-template-columns: auto;
+        grid-template-rows: 200px auto auto;
+    }
+    .logo{
+        display: flex;
+    }
+}
 /* fim das configuraçoes do grid */
 
 body {
@@ -34,13 +37,6 @@ body {
 
 /* inicio configuraçoes cabeçalho */
 header{
-     /* grid-area: cabeca;
-    background-color:rgba(39, 131, 206, 0.966);
-    text-align: center;
-    color: #e6eefa;
-    font-size: xx-large;
-    height: 200px; */
-
     grid-area: cabeca;
     background-color:rgba(248, 162, 49, 0.966);
     text-align: center;
@@ -64,31 +60,26 @@ header{
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 30px;
+    height: auto;
     background-color: #ffe5b5;
+    padding: 5px;
 }
 
 header li {
-    text-decoration: none;
-    margin-left: 9px;
-    padding: x;
     display: inline;
-    position: relative;
-    bottom: 12px;
     flex-direction: row;
     background-color: #f7c262;
     box-shadow: 3px 1px 3px #a571029c;
     font-size: x-large;
-    font-family: Arial, Helvetica, sans-serif;
     color: rgb(139, 130, 253);
-    margin: 0 10px 0 10px;
-  }
+    margin: 20px;
+    border-radius: 3px;
+    padding: 0 10px 0 10px;
+}
 
-  header a{
+header a{
     text-decoration: none;
-    color: black;
-    
-  }
+}
 /* final das configuracoes do menu */
 
 /* inicio configuraçoes corpo */
@@ -98,102 +89,13 @@ main{
     background-color:#fa8459;
     margin-top: 5px;
     text-align: center;
-    align-items: center;
-
-
     background: url("img/fundotijolinho") center center no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
 }
 
-/* configuraçao do section */
-section{
-    background-color: #ffe5b5e5;
-    /* border-radius: 100px; */
-    /* margin: 7px; */
-    text-align: center;
-    padding: 8px;
-    display: flexbox;
-    justify-content: center;
-    /* font-size: 20px; */
-    align-items: center;
-}
-
-.sobrenós {
-    font-size: 20px;
-    border-radius: 50px;
-}
-
-/*configuraçors das letras  */
-main h1{
-   text-align: center;
-   text-align: center;
-   background-color:  rgba(4, 47, 83, 0.801);
-   /* border-style: dotted;
-   border-width: 4px;
-   border-color: #f7cd7e; */
-   padding: 5px;
-   width: 300px;
-   text-align: center;
-   align-items: center;
-   justify-items: center;
-   position: relative;
-   left: 41%;
-   color: #ffe5b5;
-   border-radius: 10px;
-}
-   
-
- 
-/* inicio configuraçao do carrossel*/
-.carrossel {
-    position: relative;
-    max-width: 600px;
-    max-height: auto;
-    margin: auto;
-    overflow: hidden;
-    border: solid 25px  rgba(250, 249, 244, 0.767);
-    border-radius: 10px;
-}
-
-.slides {
-    display: flex;
-    transition: transform 0.5s ease;
- 
-}
-
-.slide {
-    min-width: 100%;
-    box-sizing: border-box;
-}
-
- .slides img {
-    width: 100%;
-    display: block;
-   
-}
-
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.8);
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-/* fim carrossel */
-
-/* configuraloes cards dos hot dogs salgados  */
+* configuraloes cards dos hot dogs salgados  */
 .sal{
     flex-direction: column;
     border-radius: 10px;
@@ -214,38 +116,114 @@ main h1{
     left: 0.5%;
 
 }
-/*fim  configuraloes cards dos hot dogs salgados  */
 
-.doce{
-    
+/* configuraçao do section */
+section{
+    padding-top: 30px;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffe5b5e5;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+#sobrenos h4{
+    margin: 20px;
+    width: 75%;
+    word-break: break-all;
+}
+
+/*configuraçors das letras  */
+main h1{
+   text-align: center;
+   /* color:  rgb(255, 229, 210);
+   background-color: #c25700f8; */
+   text-align: center;
+   text-align: center;
+   background-color:  rgba(4, 47, 83, 0.801);
+   /* border-style: dotted;
+   border-width: 4px;
+   border-color: #f7cd7e; */
+   padding: 5px;
+   width: 300px;
+   text-align: center;
+   align-items: center;
+   justify-items: center;
+   position: relative;
+   left: 41%;
+   color: #ffe5b5;
+   border-radius: 10px;
+   margin: 20px;
+   
+}
+ 
+/* inicio configuraçao do carrossel*/
+.carrossel {
+    position: relative;
+    max-width: 600px;
+    max-height: auto;
+    margin: auto;
+    overflow: hidden;
+    border: solid 25px  rgba(250, 249, 244, 0.767);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+ 
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slides img {
+    width: 100%;
+    display: block;
+   
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+/* fim carrossel */
+
+/* configuraloes cards dos hot dogs salgados  */
+.card{
     flex-direction: column;
     border-radius: 10px;
     width: 300px;
     height: 400px;
     display: flex;
-    text-align: center;
     align-items: center;
     margin:10px;
-    background-color: #ffe5b5;
-    justify-content: center;
+    background-color:  #ffe5b5;
+    justify-content: space-around;
     transition: 1s;
     box-shadow: 0px 5px 10px rgba(90, 52, 9, 0.514);
     border-style: double;
     border-width: 10px;
     border-color: rgb(17, 68, 92);
-    position: relative;
     left: 0.5%;
+
 }
-/* fim configuraloes cards dos hot dogs doces */
-
-/* configuraçoes das imagens dos cards */
-div img{
-    width: 100px;
-}
-
-/* configuraloes cards dos hot dogs salgados  */
-
-main a{
+main a {
     background-color: rgba(248, 162, 49, 0.966);
     color: rgb(53, 53, 104);
     text-decoration: none;
@@ -257,13 +235,30 @@ main a{
     padding: 10px;
 }
 
+/* configuraçoes das imagens dos cards */
+div img{
+    width: 100px;
+}
+
+/* configuraloes cards dos hot dogs salgados  */
+
+.card a{
+    background-color: rgba(248, 162, 49, 0.966);
+    color: rgb(53, 53, 104);
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+    border-radius: 3px;
+}
+
 .section{
     margin: 10px;
     flex-direction: row;
+    flex-wrap: wrap;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 186, 95, 0);
+    justify-content: space-around;
+    background-color: rgba(241, 137, 0, 0);
 }
 /* fim configuraçoes do corpo */
 
@@ -271,21 +266,22 @@ main a{
 footer{
     grid-area: rodape;
     background-color:rgba(252, 161, 44, 0.966);
-    flex-direction: column;
+    text-align: center;
+}
+
+.footer{
+
+    display: flex;
     align-items: center;
     justify-content: space-around;
-    text-align: center;
-    padding: 2px;
-    margin: 2px;
-    position: relative;
-    height: auto;
-    max-height: 300px;
+    flex-wrap: wrap;
+
 }
 
 .app{
     position: relative;
-    bottom: 150px;
-    }
+    top: 20px;
+}
 
 /* configuraçoes imagens do rodape */
 .ifood{
@@ -307,14 +303,29 @@ footer{
     display: flex;
     flex-direction: row;
     background-color: #f0c169;
-    width: 230px;
-
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 20px;
 }
 .ch{
-    position: relative;
     right: 560px;
-    top: 20px;
 }
 /* fim configuraçoes do rodape */
 
 
+/* Responsividade */
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .card-container {
+        flex-direction: column;
+    }
+    .carrossel, .slides {
+        max-width: 100%;
+    }
+    header, footer {
+        text-align: center;
+    }
+}

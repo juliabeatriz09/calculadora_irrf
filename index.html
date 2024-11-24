@@ -1,87 +1,120 @@
-
 <!DOCTYPE html>
-<html lang="pt/br">
-<head>
+<html lang="pt-br">
+<head>    
     <meta charset="UTF-8">
-    <title>Mensal</title>
+    <title>Cheese Dog</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <!-- <h1>simulador </h1> -->
-    <img src="img/logo.png" alt="oo" class="logo">
+    <!-- inicio cabeçalho -->
+    <header>
+        <!-- inicio logo -->
+        <div class="logodiv">
+            <img src="img/logo.png" alt="logo" class="logo">
+        </div>
 
-     <!-- inicio do menu retratil -->
+<!-- inicio menu -->
     <div id="menu " class="menu" >
-
-        <label for="botaoz"><i class="fa-solid fa-bars" ></i>
-        <img src="img/menu-burger.png" class="icon" alt="aa"></label>
-        <input id="botaoz" class="botaoz" type="checkbox" name="menu">
         <nav>
             <ul>
                 <li>
-                    <a href="main.html">
-                        
-                        <i class="fa-solid fa-house"> </i>
-                        <span>Home</span>
-                    </a>
-                </li>
-                <li>
                     <a href="index.html">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <span>Cálculo</span>
+                        Inicio
                     </a>
                 </li>
                 <li>
-                    <a href="anual.html">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <span>Holerite</span>
+                    <a href="cardapio.html">
+                        Cardapio
                     </a>
                 </li>
                 <li>
-                    <a href="quizz.html">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <span>Quizz</span>
-                    </a>
+                    <a href="cadastro.html">Sacola</a>
+                </li>
                 <li>
-                    <a href="main.html">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <span>Dúvidas</span>
-                    </a>
+                    <a href="monte.html">Personalize</a>
                 </li>
                 
             </ul>
         </nav>
     </div>  
-<!-- fim do menu retratil -->
+    <!-- fim menu -->
+     </header>
+<!-- fim cabeçalho -->
 
-</header>
-<main>
-    <!-- inicio do card -->
-    <div class="card">
-        <h1>Insira as seguintes infomações : </h1>
+<!-- inicio corpo -->
+    <main>
+        <h1>Sobre Nós</h1>
 
-        <h3>Salario:</h3>
-        <input type="number" id="salario" placeholder="salario">
-        <h3>Valor a deduzir:</h3>
-        <input type="number" id="dependentes" placeholder="numero de dependentes">
-        <!-- <h4>Media dedução:</h4> -->
-        <!-- <input type="number" id="deducao" value="189."> -->
+        <section class="sobrenós">
+           
+             <h4>Nossa equipe é composta por integrantes muito eficientes no trabalho,<br> somos uma empresa criada através do PIAS (Projeto Integrado de Administração e Sistemas).<br> Nossos lanches são preparados com muito cuidado <br>e dedicação para que você possa ter uma experiência única saboreando os nossos Cachorros Quentes Gourmet. <br>Nosso objetivo é fazer com que todos os nossos cliente possam sentir a qualidade do nosso produto <br>e assim popularizar nosso estabelecimento.</h4>
+        </section>
+
+             <h1> Nossos Combos</h1>
+   <!-- inicio slides -->
+    <div class="carrossel">
+        <div class="slides">
+            <img src="img/COMBO1.png" alt="Imagem 1">
+            <img src="img/COMBO2.png" alt="Imagem 2">
+            <img src="img/PROMO1.png" alt="Imagem 3">
+            <img src="img/COMBO4.jpeg" alt="Imagem 4">
+            <img src="img/COMBO5.jpeg" alt="Imagem 3">
+            <img src="img/COMBO6.jpeg" alt="Imagem 3">
         
-        <h2>Imposto à pagar:</h2>
-        <span id="valor" class="valor"></span><br>
-        <button onclick="irrf()">Calcular</button>
-
-        <!-- <span id="valor"></span> -->
+        
+        </div>
+        <button class="prev" onclick="mudarSlide(-1)">&#10094;</button>
+        <button class="next" onclick="mudarSlide(1)">&#10095;</button>
     </div>
-    <!-- fim do card -->
-
+    <h1>Populares</h1>
+    <section class="section">
+        <div class="sal">
+            <h3>Hott Aligot</h3>
+            <img src="img/aligot.jpeg" alt="lanches">
+            <p>pão de cachorro quente, salsicha, mostarda, maionese de alho, <br>milho, cebola, tomate, aligot, calabresa ralada e requeijão</p>
+            <input type="text" placeholder="obs:">
+           <strong> <p>R$27,00</p></strong> 
+            <a href="cadastro.html">+ sacola</a>
+        </div>
+        <div class="sal">
+            <h3>Hott Calabresa</h3>
+            <img src="img/calabresa.jpeg" alt="lanches">
+           <p>Salsicha, calabresa fatiada,<br> cheiro verde e queijo cheddar</p>
+            <input type="text" placeholder="obs:">
+           <strong> <p>R$38,90</p></strong>
+            <a href="cadastro.html">+ sacola</a>
+        </div>
+        <div class="doce">
+            <h3>Hott morango com Nutella </h3>
+            <img src="img/nutela.jpeg" alt="doces">
+           <p> pão de cachorro quente,<br> feito com massa de chocolate.<br> Morango, Nutella<br> e creme de leite ninho </p>
+            <input type="text" placeholder="obs:">
+            <strong><p>R$27,90</p></strong>
+            <a href="cadastro.html">+ sacola</a>
+        </div>
+    </section>
     <script src="script.js"></script>
-</main>
-<footer>
-    <img src="img/chat.png" class="robozinho" alt="ppp">
+    <!-- fim slides -->
+    </main>
+<!-- fim corpo -->
 
-</footer>
+<!-- inicio rodape-->
+    <footer>
+        <h3 class="ch">Converse conosco</h3>
+        <div class="chat">
+        <img src="img/mascotenobg.png" alt="chat">
+         <strong><p>(45)3456-7890</p></strong>
+        </div>
+        <div class="app">
+        <h3>Peça tambem por aplicativo </h3>
+      <a href="https://www.ifood.com.br/" ><img src="img/whiteifood.png" class="ifood" alt=""></a>
+       <a href="https://www.rappi.com.br/"><img src="img/whiterappi.png"  class="rappi" alt=""></a>
+        <a href="https://deliverymuch.com.br/"><img src="img/dmwhite.png" class="much" alt=""></a>
+        <p>ESTAMOS LOCALIZADOS:</p>
+        <h2>Rua Chapecó,123 - Foz do Iguaçu,Paraná,Brasil.</h2>
+       </div>
+    </footer>
+<!-- fim rodape-->
 
 </body>
 </html>

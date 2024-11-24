@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheese Dog's- Cachorro Quente Gourmet</title> 
+    <link rel="stylesheet" href="cadastro.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="logo" class="logo">
+        <div id="menu " class="menu" >
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="cardapio.html"> Cardapio</a>
+                </li>
+                <li>
+                    <a href="cadastro.html">Sacola</a>
+                </li>
+                <li>
+                    <a href="monte.html">Personalize</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <main>
+        <div class="page-title">
+            <h1>Sua sacola</h1>
+            <img class="carr"  src="img/carrinho.png">
+        </div>
+        <div class="content">
+            <section>
+               <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>
+                        <div class="produto">
+                            <img src="img/nachos.jpeg" class="prod">
+                            <div class="info">
+                                <div class="name">Hot Nachos</div>
+                                <div class="categoria">Hotdogs</div>
+                            </div>
+                        </div>
+                    </td>
+                  <strong> <td>R$:22,99</td></strong>
+                    <td>
+                        <div data-app="product.quantity" id="quantidade">
+                            <span id="span_erro_carrinho" class="blocoAlerta" style="display:none;">Selecione uma opção para variação do produto</span>
+                            <label>Quantidade:</label>      
+                            <input type="button" id="plus" value='-' onclick="process(-1)" />
+                            <input id="quant" name="quant" class="text" size="1" type="text" value="1" maxlength="5" />
+                            <input type="button" id="minus" value='+' onclick="process(1)">
+                        </div>
+                    </td>
+                 <strong>   <td>R$:46,00</td></strong>
+                    <td>
+                        <button class="delete"><i class='bx bx-x'></i></button>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="produto">
+                                <img src="img/calabresa.jpeg" class="prod">
+                                <div class="info">
+                                    <div class="name">Hot Calabresa</div>
+                                    <div class="categoria">Hotdogs</div>
+                                </div>
+                            </div>
+                        </td>
+                     <strong><td>R$:30,90</td></strong>
+                        <td>
+                            <div data-app="product.quantity" id="quantidade">
+                                <span id="span_erro_carrinho" class="blocoAlerta" style="display:none;">Selecione uma opção para variação do produto</span>
+                                <label>Quantidade:</label>      
+                                <input type="button" id="plus" value='-' onclick="process(-1)" />
+                                <input id="quant" name="quant" class="text" size="1" type="text" value="1" maxlength="5" />
+                                <input type="button" id="minus" value='+' onclick="process(1)">
+                            
+                        </div>
+                        </td>
+                        <td>R$:30,90</td>
+                        <td>
+                            <button class="delete"><i class='bx bx-x'></i></button>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="produto">
+                                    <img src="img/btsssnack.jpeg" class="prod">
+                                    <div class="info">
+                                        <div class="name">Batata Cheddar e Bacon</div>
+                                        <div class="categoria">Acompanhamentos</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>R$:15,00</td>
+                            <td>
+
+                                    <div data-app="product.quantity" id="quantidade">
+                                      <span id="span_erro_carrinho" class="blocoAlerta" style="display:none;">Selecione uma opção para variação do produto</span>
+                                      <label>Quantidade:</label>      
+                                      <input type="button" id="plus" value='-' onclick="process(-1)" />
+                                      <input id="quant" name="quant" class="text" size="1" type="text" value="1" maxlength="5" />
+                                      <input type="button" id="minus" value='+' onclick="process(1)">
+                                    </div>
+                            </div>
+                            </td>
+                            <td>R$:30,00</td>
+                            <td>
+                                <button class="delete"><i class='bx bx-x'></i></button>
+                            </td>
+                            </tr>
+                </tbody>
+               </table>
+            </section>
+
+            <div class="mainlog">
+                <div class="rightlog">
+                    <div class="cardlog">
+                        <h1>Registre-se no Cheese Dog's</h1>
+                        <div class="textfield">
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" placeholder="Digite seu nome">
+                            <div class="textfield">
+                                <label for="end"> Endereço</label>
+                                <input type="text" name="endereco" placeholder="Digite seu endereço"> 
+                        </div>
+                        <div class="textfield">
+                            <label for="tel">Telefone</label>
+                            <input type="text" name="senha" placeholder="Seu telefone"> 
+                            <div class="botaoqueijo">
+                                <button class="button"  ><a href="index.html"><strong>finalizar pedido</strong></a></button>
+                                <div class="drip-1"></div>
+                                <div class="drip-2"></div>
+                                <div class="drip-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <h1>Sugestões</h1>
+                <section class="salg">
+            <div class="sal">
+                <h3>Coca Lata</h3>
+                <img src="img/cocalata.jpeg" alt="lanches">  
+                <p>R$36,50</p>
+                <a href="cadastro.html"> + sacola</a>
+            </div>
+            <div class="sal">
+                <h3>Guarana Lata</h3>
+                <img src="img/lataguarana.jpeg" alt="lanches">
+                <p>R$27,00</p>
+                <a href="cadastro.html">+ sacola</a>
+            </div>
+        </section>
+        </main>
+        <footer>
+            <h3 class="ch">Converse conosco</h3>
+            <div class="chat">
+                <img src="img/mascotenobg.png" alt="chat">
+                <strong><p>(45)3456-7890</p></strong>
+            </div>
+            <div class="app">
+                <h3>Peça tambem por aplicativo</h3>
+                <a href="https://www.ifood.com.br/" ><img src="img/whiteifood.png" class="ifood" alt=""></a>
+                <a href="https://www.rappi.com.br/"><img src="img/whiterappi.png"  class="rappi" alt=""></a>
+                <a href="https://deliverymuch.com.br/"><img src="img/dmwhite.png" class="much" alt=""></a>
+                <p>ESTAMOS LOCALIZADOS:</p>
+                <a href=https://www.google.com/maps/place/Rua+Chapec%C3%B3,+123+-+Lot.+Campos+do+Iguacu,+Foz+do+Igua%C3%A7u+-+PR,+85857-480/@-25.5291478,-54.5561277,17z/data=!4m14!1m8!3m7!1s0x94f690fae118241b:0x4838e673c3cc47cb!2sRua+Chapec%C3%B3,+123+-+Lot.+Campos+do+Iguacu,+Foz+do+Igua%C3%A7u+-+PR,+85857-480!3b1!8m2!3d-25.5292131!4d-54.5563102!10e5!3m4!1s0x94f690fae118241b:0x4838e673c3cc47cb!8m2!3d-25.5292131!4d-54.5563102?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D>
+                    <h2>Rua Chapecó,123 - Foz do Iguaçu, Paraná, Brasil.</h2>
+                </a>
+            </div>
+        </footer>
+</body>
+</html>

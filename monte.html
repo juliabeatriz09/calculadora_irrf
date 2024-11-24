@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cheese Dog</title>
+    <link rel="stylesheet" href="monte.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="logo" class="logo">
+        <!-- inicio do menu retratil -->
+<div id="menu " class="menu" >
+  <nav>
+      <ul>
+          <li>
+              <a href="index2.html">
+                  inicio
+              </a>
+          </li>
+          <li>
+              <a href="cardapio.html">
+                  cardapio
+              </a>
+          </li>
+          <li>
+              <a href="cadastro.html">sacola</a>
+          </li>
+          <li>
+              <a href="monte.html">personalize</a>
+          </li>
+          
+      </ul>
+  </nav>
+</div>  
+<!-- fim do menu retratil -->
+    </header>
+    <main>
+    <h1>Monte seu lanche</h1>
+    <h2>Pães</h2>
+    <section class="bread">
+
+    <div class="pao">
+      <input type="checkbox" >
+        <h3>Pão vegano</h3>
+        <img src="img/ingredientes/pao1.png" alt="pao">
+    </div>
+    <div class="pao">
+          <input type="checkbox" >
+          <h3>Pão Tradicional</h3>
+          <img src="img/ingredientes/pao2.png" alt="pao">
+        
+    </div>
+        <div class="pao">
+          <input type="checkbox" >
+          <h3>Pão de 1000 grãos </h3>
+          <img src="img/ingredientes/pao3.png" alt="pao">
+        </div>
+
+        <div class="pao">
+          <input type="checkbox" >
+          <h3>Pão Baguete</h3>
+           <img src="img/ingredientes/pao4.png" alt="pao">    
+        </div>
+
+        <div class="pao">
+          <input type="checkbox" >
+            <h3>Pão de Gergilim</h3>
+            <img src="img/ingredientes/pao5.png" alt="pao">
+        </div>
+    </section>
+    <h2>Queijos</h2>
+    <section class="cheese">                
+    <div class="Queijo" id="que">
+      <input type="checkbox" class="check"  >
+        <h3>Queijo Cheddar</h3>
+        <img src="img/ingredientes/cheddar.png" alt="queijos">
+         
+  
+      </div>
+    </div>
+    <div class="Queijo">
+      <input type="checkbox" class="check" >
+        <h3>Queijo Mussarela</h3>
+        <img src="img/ingredientes/mussarela.png" alt="queijos">
+    </div>
+    <div class="Queijo">
+      <input type="checkbox"  >
+        <h3> Queijo prato</h3>
+        <img src="img/ingredientes/prata.png" alt="queijos">
+    </div>
+        <div class="Queijo">
+          <input type="checkbox" >
+          <h3>Tofu</h3>
+          <img src="img/ingredientes/tofu.png" alt="complemento">
+        </div>
+    </section>
+    <h2>complementos</h2>
+    <section class="comple">
+  
+    <div class="comp">
+      <input type="checkbox" >
+        <h3>Ervilha</h3>
+      <img src="img/ingredientes/ervilha.png" alt="complemento">
+      
+      
+    </div>
+    <div class="comp">
+      <input type="checkbox" >
+        <h3>Pure de Batata</h3>
+        <img src="img/ingredientes/pure.png" alt="complemento">
+        <input type="checkbox" >
+       
+      </div>
+      <div class="comp">
+        <input type="checkbox" >
+        <h3>Milho</h3>
+        <img src="img/ingredientes/milho.png" alt="complemento">
+        
+        
+      </div>
+      <div class="comp">
+        <input type="checkbox" >
+        <h3>Batata Palha</h3>
+        <img src="img/ingredientes/batatapalha.png" alt="complemento">
+        
+      </div>
+      <div class="comp">
+        <input type="checkbox" >
+        <h3>Queijo Mussarela Ralado</h3>
+        <img src="img/ingredientes/ralado.png" alt="complemento">
+       
+        
+      </div>
+      <div class="comp">
+        <input type="checkbox" >
+        <h3>Vinagrete</h3>
+        <img src="img/ingredientes/vinagrete.png" alt="complemento">
+        
+       
+      </div>
+    </section>
+    <h2>Salsichas</h2>
+    <section class="sicha">
+  
+    <div class="salsi">
+      <input type="checkbox" >
+      <h3>Salsicha Tradicional</h3>
+      <img src="img/ingredientes/sasicha3.png" alt="salsicha">
+      
+      
+    </div>
+    <div class="salsi">
+      <input type="checkbox" class="check" >
+      <h3>Salsicha de frango</h3>
+      <img src="img/ingredientes/sasicha2.png" alt="salsicha">
+      
+    </div>
+    <div class="salsi">
+      <input type="checkbox"  >
+      <h3>Salsicha Tradicional</h3>
+      <img src="img/ingredientes/sasicha1.png" alt="salsicha">
+         
+      
+    </div>
+    <label class="quan">Quantidade:</label>  
+    <div class="cont" >     
+    <input type="button" id="plus" value='-' onclick="process(-1)" />
+    <input id="quant" name="quant" class="text" size="1" type="text" value="1" maxlength="5" />
+    <input type="button" id="minus" value='+' onclick="process(1)">
+    <script src="scriptcad.js"></script>
+    </div>
+  </section>
+  
+    </main>
+    <footer>
+    <!-- inicio botão animado -->
+    <div class="betina">
+      <button class="button"  ><a href="cadastro.html"><strong>adicionar a sacola</strong></a></button>
+      <div class="drip-1"></div>
+      <div class="drip-2"></div>
+      <div class="drip-3"></div>
+    </div>
+    <!-- fim botão animado -->
+   <footer>
+    <h3 class="ch">Converse conosco</h3>
+    <div class="chat">
+      <img src="img/mascotenobg.png" alt="chat">
+      <strong><p>(45)3456-7890</p></strong>
+  </div>
+  <div class="app">
+        <h3>Peça tambem por aplicativo </h3>
+        <a href="https://www.ifood.com.br/" ><img src="img/whiteifood.png" class="ifood" alt=""></a>
+         <a href="https://www.rappi.com.br/"><img src="img/whiterappi.png"  class="rappi" alt=""></a>
+          <a href="https://deliverymuch.com.br/"><img src="img/ingredientes/dmwhite.png" class="much" alt=""></a>
+          <p>ESTAMOS LOCALIZADOS:</p>
+          <h2>Rua Chapecó,123 - Foz do Iguaçu,Paraná,Brasil.</h2>
+        </div>
+    </footer>
+</body>
+</html>
