@@ -1,0 +1,208 @@
+/* fonte da pagina */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@415&display=swap');
+body{
+    font-family: 'Quicksand', 'sans-serif';
+    /* fim da fonte */
+    margin: 0;/* grid */
+    display: grid;
+    grid-template-areas: "cab "
+                         "corp "
+                         "pe ";  
+    background-color: rgb(176,196,222);
+
+}
+/* configuracoes do header */
+header{
+    grid-area: cab;
+    background-color: rgba(24, 32, 105, 0.938);
+    height: 135px;
+    /* position: absolute; */
+ }
+
+ header h1{
+    text-align: center;
+    color: #e6eefa;
+    font-size: xx-large;
+    background-color: #31769e;
+    margin-top: 40px;
+ }
+
+ .logo{
+    align-items: center;
+    text-align: center;
+    margin-left: 650px;
+ }
+
+ /* configuraçao do menu */
+header{
+    position: relative;
+}
+.menu{
+    position: absolute;
+    top: 0;
+}
+
+.menu nav{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgb(15, 14, 87);
+    width: 0px;
+    transition: all 0.8s ease;
+    position: relative;
+    margin: 5px;
+}
+.menu li{
+    list-style: none;
+    color: #fffbfb;
+    padding: 10px;
+    text-align: center;
+    font-size: 23px;
+}
+.menu li a{
+    color:#000000;
+    text-decoration: none;
+}
+.menu a span{
+    font-size: 0;
+    display: block;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+.menu label{
+    font-size: 28px;
+    padding-left: 6px;
+
+}
+
+.botaoz{
+    display: none;
+    color: #72CBFF;
+}
+.botaoz:checked+nav{
+    width: 200px;
+    border-radius: 5px;
+    padding: 0 20px;
+}
+
+.botaoz:checked+nav li{
+    border-bottom: dashed 1px rgb(30, 28, 116) ;
+    text-align: left;
+}
+
+.botaoz:checked+nav li:last-child{
+    border: none;
+}
+
+.botaoz:checked+nav a span{
+    font-size: 16px;
+    display: inline-block;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+.fa-bars:hover{
+    color: white;
+    text-shadow: 1px 1px 8px #fcdbe4;
+}
+
+.menu li a:hover{
+    color: #31769e;
+    text-shadow: 0 0 5px white;
+}
+
+
+.icon{
+    width: 70px;
+    margin-top: 20px;
+
+}
+/* final das configuracoes do menu */
+
+ /* fim configuracoes do header */
+
+ 
+ /* configuracoes main */
+ main{
+    grid-area: corp;
+    background-color:   #97c2dd;
+    display: flex;
+    justify-content: center;
+    height: auto;
+ }
+
+ /* configuraçoes do card */
+ .card{
+    margin-top: 55px;
+    margin-bottom: 60px;
+    display: flex;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.829);
+    width: 900px;
+    height: 550px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 10px 30px rgba(97, 97, 139, 0.849);
+    text-align: center;
+}
+.card input{
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+/* configuraçao das letras */
+h1{
+    font-size: 40px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    color: #325a85;
+}
+h3{
+    margin:5px ;
+    font-size: 30px;
+    color: #3f3f47;
+}
+
+/* configuraçao dos botoes */
+button{
+    background-color:rgb(70,130,180) ;
+    color: white;
+    border-radius: 10px;
+    width: 150px;
+    height: 65px;
+    font-size: 25px;
+    border:solid 2px;
+    transition: 1s;
+}
+button:hover{
+    box-shadow:1px 2px 3px 3px #ff0b0b00;
+    transform: scale(1.1);
+}
+
+/* configuraçao do resultado */
+.valor{
+    margin-bottom: 15px;
+    color: crimson;
+    font-size: 30px;
+}
+/* fim das configuraçoes do card */
+ /* fim das configuracoes main */
+
+
+ /* configuracoes do footer */
+ footer{
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    grid-area: pe;
+    background-color: rgba(24, 32, 105, 0.938);
+    height: 210px;
+ }
+.robozinho{
+    width: 200px;
+    margin-top: 20px;
+    margin: 15px;
+}
+  /*fim das configuracoes do footer */
+
